@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1022
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryGame_ApexTheme", "MemoryGame_ApexTheme\MemoryGame_ApexTheme.csproj", "{0397CAAB-1B51-4D66-BE27-98BC20246F2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0D545BB1-AE80-4398-BDE1-0984A8C09348}"
+	ProjectSection(SolutionItems) = preProject
+		SuspiciousCode.txt = SuspiciousCode.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0397CAAB-1B51-4D66-BE27-98BC20246F2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0397CAAB-1B51-4D66-BE27-98BC20246F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0397CAAB-1B51-4D66-BE27-98BC20246F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0397CAAB-1B51-4D66-BE27-98BC20246F2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8268A208-0ADB-46E8-8868-6BB0C22B8FA7}
+	EndGlobalSection
+EndGlobal

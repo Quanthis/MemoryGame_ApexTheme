@@ -1,0 +1,35 @@
+/*Form 1 */
+{
+	    public async Task LoadOtherFormAsync(Form loadedForm)
+        {
+            await Task.Run(() => Application.Run(new Form_EasyMode()));
+
+			//or
+
+            /*{
+                Visible = false;
+                Form easyModeForm = new Form_EasyMode();
+                DialogResult dialogResult = easyModeForm.ShowDialog();
+                Visible = true;
+            }*/
+        }
+
+		private async void TurnEasyMode_Click(object sender, EventArgs e)
+        {
+
+		    Thread t1 = new Thread(() =>
+            {
+                Application.Run(new Form_EasyMode());                       //actually lets to close caller form, however I don't feel like it's the proper way
+            });
+            t1.Start();
+            t1.Join();*/
+
+            //await LoadOtherFormAsync(new Form_EasyMode());
+
+            /*this.Visible = false;
+            var easyModeForm = new Form_EasyMode();
+            DialogResult dialogResult = easyModeForm.ShowDialog();            //sets up 'children task', main window stil open till dispose
+            this.Visible = true;
+
+		}
+}

@@ -63,16 +63,6 @@ namespace MemoryGame_ApexTheme.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Banglore {
-            get {
-                object obj = ResourceManager.GetObject("Banglore", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Banglore1 {
             get {
                 object obj = ResourceManager.GetObject("Banglore1", resourceCulture);
@@ -96,6 +86,16 @@ namespace MemoryGame_ApexTheme.Properties {
         internal static System.Drawing.Bitmap Caustic {
             get {
                 object obj = ResourceManager.GetObject("Caustic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Covered_Card {
+            get {
+                object obj = ResourceManager.GetObject("Covered_Card", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
@@ -22,14 +23,16 @@ namespace MemoryGame_ApexTheme
 
         public void NullButtons()
         {
-            firstButtonPressed = null;
-            secondButtonPressed = null;   
-        }
+            Thread.Sleep(1000);
 
-        public void NullFirstButton()
-        {
+
+            firstButtonPressed.ImageIndex = 1;
+            secondButtonPressed.ImageIndex = 1;
+
             firstButtonPressed = null;
+            secondButtonPressed = null;
         }
+        
 
         public Button[] GetButtons()
         {
@@ -44,10 +47,14 @@ namespace MemoryGame_ApexTheme
             if (firstButtonPressed == null)
             {
                 firstButtonPressed = newButton;
+                firstButtonPressed.ImageIndex = 0;
+                Thread.Sleep(1000);
             }
             else
-            {
+            { 
                 secondButtonPressed = newButton;
+                secondButtonPressed.ImageIndex = 0;
+                Thread.Sleep(1000);
             }
 
         }

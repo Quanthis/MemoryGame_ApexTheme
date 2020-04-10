@@ -108,9 +108,6 @@
     <None Include="Resources\QuestionMark.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Banglore.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\BloodHound.png" />
   </ItemGroup>
   <ItemGroup>
@@ -130,6 +127,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Theme.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Covered_Card.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_EasyMode));
+            this.Banglore_Images = new System.Windows.Forms.ImageList(this.components);
+            this.Wraith_2 = new System.Windows.Forms.Button();
             this.Wraith = new System.Windows.Forms.Button();
             this.Pathfinder_2 = new System.Windows.Forms.Button();
             this.Pathfinder = new System.Windows.Forms.Button();
@@ -36,17 +40,45 @@
             this.Caustic_2 = new System.Windows.Forms.Button();
             this.Caustic = new System.Windows.Forms.Button();
             this.Bloodhound_2 = new System.Windows.Forms.Button();
+            this.Bloodhound_Images = new System.Windows.Forms.ImageList(this.components);
             this.Bloodhound = new System.Windows.Forms.Button();
             this.Banglore_2 = new System.Windows.Forms.Button();
             this.Banglore_1 = new System.Windows.Forms.Button();
-            this.Wraith_2 = new System.Windows.Forms.Button();
+            this.Caustic_Images = new System.Windows.Forms.ImageList(this.components);
+            this.Lifeline_Images = new System.Windows.Forms.ImageList(this.components);
+            this.Pathfinder_Images = new System.Windows.Forms.ImageList(this.components);
+            this.Wraith_Images = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
+            // 
+            // Banglore_Images
+            // 
+            this.Banglore_Images.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("Banglore_Images.ImageStream")));
+            this.Banglore_Images.TransparentColor = System.Drawing.Color.Transparent;
+            this.Banglore_Images.Images.SetKeyName(0, "Banglore.png");
+            this.Banglore_Images.Images.SetKeyName(1, "Covered_Card.PNG");
+            // 
+            // Wraith_2
+            // 
+            this.Wraith_2.AutoSize = true;
+            this.Wraith_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Wraith_2.BackgroundImage")));
+            this.Wraith_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.5F);
+            this.Wraith_2.ImageIndex = 1;
+            this.Wraith_2.ImageList = this.Wraith_Images;
+            this.Wraith_2.Location = new System.Drawing.Point(961, 318);
+            this.Wraith_2.Name = "Wraith_2";
+            this.Wraith_2.Size = new System.Drawing.Size(158, 281);
+            this.Wraith_2.TabIndex = 11;
+            this.Wraith_2.Text = "Wraith";
+            this.Wraith_2.UseVisualStyleBackColor = true;
+            this.Wraith_2.Click += new System.EventHandler(this.Wraith_2_Click);
             // 
             // Wraith
             // 
             this.Wraith.AutoSize = true;
-            this.Wraith.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.Wraith;
+            this.Wraith.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Wraith.BackgroundImage")));
             this.Wraith.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.5F);
+            this.Wraith.ImageIndex = 1;
+            this.Wraith.ImageList = this.Wraith_Images;
             this.Wraith.Location = new System.Drawing.Point(961, 12);
             this.Wraith.Name = "Wraith";
             this.Wraith.Size = new System.Drawing.Size(158, 281);
@@ -58,11 +90,13 @@
             // Pathfinder_2
             // 
             this.Pathfinder_2.AutoSize = true;
-            this.Pathfinder_2.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.Pathfinder;
+            this.Pathfinder_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Pathfinder_2.BackgroundImage")));
             this.Pathfinder_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.5F);
+            this.Pathfinder_2.ImageIndex = 1;
+            this.Pathfinder_2.ImageList = this.Pathfinder_Images;
             this.Pathfinder_2.Location = new System.Drawing.Point(776, 318);
             this.Pathfinder_2.Name = "Pathfinder_2";
-            this.Pathfinder_2.Size = new System.Drawing.Size(158, 281);
+            this.Pathfinder_2.Size = new System.Drawing.Size(162, 281);
             this.Pathfinder_2.TabIndex = 9;
             this.Pathfinder_2.Text = "Pathfinder";
             this.Pathfinder_2.UseVisualStyleBackColor = true;
@@ -71,11 +105,13 @@
             // Pathfinder
             // 
             this.Pathfinder.AutoSize = true;
-            this.Pathfinder.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.Pathfinder;
+            this.Pathfinder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Pathfinder.BackgroundImage")));
             this.Pathfinder.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.5F);
+            this.Pathfinder.ImageIndex = 1;
+            this.Pathfinder.ImageList = this.Pathfinder_Images;
             this.Pathfinder.Location = new System.Drawing.Point(776, 12);
             this.Pathfinder.Name = "Pathfinder";
-            this.Pathfinder.Size = new System.Drawing.Size(158, 281);
+            this.Pathfinder.Size = new System.Drawing.Size(162, 281);
             this.Pathfinder.TabIndex = 8;
             this.Pathfinder.Text = "Pathfinder";
             this.Pathfinder.UseVisualStyleBackColor = true;
@@ -84,11 +120,13 @@
             // Lifeline2
             // 
             this.Lifeline2.AutoSize = true;
-            this.Lifeline2.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.Lifeline;
+            this.Lifeline2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Lifeline2.BackgroundImage")));
             this.Lifeline2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.5F);
+            this.Lifeline2.ImageIndex = 1;
+            this.Lifeline2.ImageList = this.Lifeline_Images;
             this.Lifeline2.Location = new System.Drawing.Point(580, 318);
             this.Lifeline2.Name = "Lifeline2";
-            this.Lifeline2.Size = new System.Drawing.Size(158, 281);
+            this.Lifeline2.Size = new System.Drawing.Size(162, 281);
             this.Lifeline2.TabIndex = 7;
             this.Lifeline2.Text = "Lifeline";
             this.Lifeline2.UseVisualStyleBackColor = true;
@@ -97,11 +135,13 @@
             // Lifeline
             // 
             this.Lifeline.AutoSize = true;
-            this.Lifeline.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.Lifeline;
+            this.Lifeline.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Lifeline.BackgroundImage")));
             this.Lifeline.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.5F);
+            this.Lifeline.ImageIndex = 1;
+            this.Lifeline.ImageList = this.Lifeline_Images;
             this.Lifeline.Location = new System.Drawing.Point(580, 12);
             this.Lifeline.Name = "Lifeline";
-            this.Lifeline.Size = new System.Drawing.Size(158, 281);
+            this.Lifeline.Size = new System.Drawing.Size(162, 281);
             this.Lifeline.TabIndex = 6;
             this.Lifeline.Text = "Lifeline";
             this.Lifeline.UseVisualStyleBackColor = true;
@@ -110,11 +150,13 @@
             // Caustic_2
             // 
             this.Caustic_2.AutoSize = true;
-            this.Caustic_2.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.Caustic;
+            this.Caustic_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Caustic_2.BackgroundImage")));
             this.Caustic_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.5F);
+            this.Caustic_2.ImageIndex = 1;
+            this.Caustic_2.ImageList = this.Caustic_Images;
             this.Caustic_2.Location = new System.Drawing.Point(391, 318);
             this.Caustic_2.Name = "Caustic_2";
-            this.Caustic_2.Size = new System.Drawing.Size(158, 281);
+            this.Caustic_2.Size = new System.Drawing.Size(162, 281);
             this.Caustic_2.TabIndex = 5;
             this.Caustic_2.Text = "Caustic";
             this.Caustic_2.UseVisualStyleBackColor = true;
@@ -123,11 +165,13 @@
             // Caustic
             // 
             this.Caustic.AutoSize = true;
-            this.Caustic.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.Caustic;
+            this.Caustic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Caustic.BackgroundImage")));
             this.Caustic.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.5F);
+            this.Caustic.ImageIndex = 1;
+            this.Caustic.ImageList = this.Caustic_Images;
             this.Caustic.Location = new System.Drawing.Point(391, 12);
             this.Caustic.Name = "Caustic";
-            this.Caustic.Size = new System.Drawing.Size(158, 281);
+            this.Caustic.Size = new System.Drawing.Size(162, 281);
             this.Caustic.TabIndex = 4;
             this.Caustic.Text = "Caustic";
             this.Caustic.UseVisualStyleBackColor = true;
@@ -136,24 +180,35 @@
             // Bloodhound_2
             // 
             this.Bloodhound_2.AutoSize = true;
-            this.Bloodhound_2.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.BloodHound;
+            this.Bloodhound_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bloodhound_2.BackgroundImage")));
             this.Bloodhound_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.5F);
+            this.Bloodhound_2.ImageIndex = 1;
+            this.Bloodhound_2.ImageList = this.Bloodhound_Images;
             this.Bloodhound_2.Location = new System.Drawing.Point(196, 318);
             this.Bloodhound_2.Name = "Bloodhound_2";
-            this.Bloodhound_2.Size = new System.Drawing.Size(158, 281);
+            this.Bloodhound_2.Size = new System.Drawing.Size(162, 281);
             this.Bloodhound_2.TabIndex = 3;
             this.Bloodhound_2.Text = "Bloodhound";
             this.Bloodhound_2.UseVisualStyleBackColor = true;
             this.Bloodhound_2.Click += new System.EventHandler(this.Bloodhound_2_Click);
             // 
+            // Bloodhound_Images
+            // 
+            this.Bloodhound_Images.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("Bloodhound_Images.ImageStream")));
+            this.Bloodhound_Images.TransparentColor = System.Drawing.Color.Transparent;
+            this.Bloodhound_Images.Images.SetKeyName(0, "BloodHound.png");
+            this.Bloodhound_Images.Images.SetKeyName(1, "Covered_Card.PNG");
+            // 
             // Bloodhound
             // 
             this.Bloodhound.AutoSize = true;
-            this.Bloodhound.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.BloodHound;
+            this.Bloodhound.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bloodhound.BackgroundImage")));
             this.Bloodhound.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.5F);
+            this.Bloodhound.ImageIndex = 1;
+            this.Bloodhound.ImageList = this.Bloodhound_Images;
             this.Bloodhound.Location = new System.Drawing.Point(196, 12);
             this.Bloodhound.Name = "Bloodhound";
-            this.Bloodhound.Size = new System.Drawing.Size(158, 281);
+            this.Bloodhound.Size = new System.Drawing.Size(162, 281);
             this.Bloodhound.TabIndex = 2;
             this.Bloodhound.Text = "Bloodhound";
             this.Bloodhound.UseVisualStyleBackColor = true;
@@ -162,11 +217,13 @@
             // Banglore_2
             // 
             this.Banglore_2.AutoSize = true;
-            this.Banglore_2.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.Banglore1;
+            this.Banglore_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Banglore_2.BackgroundImage")));
             this.Banglore_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Banglore_2.ImageIndex = 1;
+            this.Banglore_2.ImageList = this.Banglore_Images;
             this.Banglore_2.Location = new System.Drawing.Point(12, 318);
             this.Banglore_2.Name = "Banglore_2";
-            this.Banglore_2.Size = new System.Drawing.Size(158, 281);
+            this.Banglore_2.Size = new System.Drawing.Size(162, 281);
             this.Banglore_2.TabIndex = 1;
             this.Banglore_2.Text = "Banglore";
             this.Banglore_2.UseVisualStyleBackColor = true;
@@ -174,9 +231,10 @@
             // 
             // Banglore_1
             // 
-            this.Banglore_1.AutoSize = true;
-            this.Banglore_1.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.Banglore1;
+            this.Banglore_1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Banglore_1.BackgroundImage")));
             this.Banglore_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Banglore_1.ImageIndex = 1;
+            this.Banglore_1.ImageList = this.Banglore_Images;
             this.Banglore_1.Location = new System.Drawing.Point(12, 12);
             this.Banglore_1.Name = "Banglore_1";
             this.Banglore_1.Size = new System.Drawing.Size(158, 281);
@@ -185,18 +243,33 @@
             this.Banglore_1.UseVisualStyleBackColor = true;
             this.Banglore_1.Click += new System.EventHandler(this.Banglore_1_Click);
             // 
-            // Wraith_2
+            // Caustic_Images
             // 
-            this.Wraith_2.AutoSize = true;
-            this.Wraith_2.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.Wraith;
-            this.Wraith_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.5F);
-            this.Wraith_2.Location = new System.Drawing.Point(961, 318);
-            this.Wraith_2.Name = "Wraith_2";
-            this.Wraith_2.Size = new System.Drawing.Size(158, 281);
-            this.Wraith_2.TabIndex = 11;
-            this.Wraith_2.Text = "Wraith";
-            this.Wraith_2.UseVisualStyleBackColor = true;
-            this.Wraith_2.Click += new System.EventHandler(this.Wraith_2_Click);
+            this.Caustic_Images.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("Caustic_Images.ImageStream")));
+            this.Caustic_Images.TransparentColor = System.Drawing.Color.Transparent;
+            this.Caustic_Images.Images.SetKeyName(0, "Caustic.png");
+            this.Caustic_Images.Images.SetKeyName(1, "Covered_Card.PNG");
+            // 
+            // Lifeline_Images
+            // 
+            this.Lifeline_Images.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("Lifeline_Images.ImageStream")));
+            this.Lifeline_Images.TransparentColor = System.Drawing.Color.Transparent;
+            this.Lifeline_Images.Images.SetKeyName(0, "Lifeline.png");
+            this.Lifeline_Images.Images.SetKeyName(1, "Covered_Card.PNG");
+            // 
+            // Pathfinder_Images
+            // 
+            this.Pathfinder_Images.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("Pathfinder_Images.ImageStream")));
+            this.Pathfinder_Images.TransparentColor = System.Drawing.Color.Transparent;
+            this.Pathfinder_Images.Images.SetKeyName(0, "Pathfinder.png");
+            this.Pathfinder_Images.Images.SetKeyName(1, "Covered_Card.PNG");
+            // 
+            // Wraith_Images
+            // 
+            this.Wraith_Images.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("Wraith_Images.ImageStream")));
+            this.Wraith_Images.TransparentColor = System.Drawing.Color.Transparent;
+            this.Wraith_Images.Images.SetKeyName(0, "Wraith.png");
+            this.Wraith_Images.Images.SetKeyName(1, "Covered_Card.PNG");
             // 
             // Form_EasyMode
             // 
@@ -238,5 +311,11 @@
         private System.Windows.Forms.Button Pathfinder_2;
         private System.Windows.Forms.Button Wraith;
         private System.Windows.Forms.Button Wraith_2;
+        private System.Windows.Forms.ImageList Banglore_Images;
+        private System.Windows.Forms.ImageList Bloodhound_Images;
+        private System.Windows.Forms.ImageList Caustic_Images;
+        private System.Windows.Forms.ImageList Wraith_Images;
+        private System.Windows.Forms.ImageList Pathfinder_Images;
+        private System.Windows.Forms.ImageList Lifeline_Images;
     }
 }

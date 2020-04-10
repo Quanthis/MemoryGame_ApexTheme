@@ -124,11 +124,11 @@
   <data name="QuestionMark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\QuestionMark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Banglore" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Banglore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BloodHound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BloodHound.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Theme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Theme.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Pathfinder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pathfinder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,7 +142,7 @@
   <data name="Lifeline" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lifeline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Theme" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Theme.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Covered_Card" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Covered_Card.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

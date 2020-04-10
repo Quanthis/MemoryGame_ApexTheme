@@ -46,80 +46,103 @@
             // 
             this.Wraith.AutoSize = true;
             this.Wraith.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.Wraith;
+            this.Wraith.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.5F);
             this.Wraith.Location = new System.Drawing.Point(961, 12);
             this.Wraith.Name = "Wraith";
             this.Wraith.Size = new System.Drawing.Size(158, 281);
             this.Wraith.TabIndex = 10;
+            this.Wraith.Text = "Wraith";
             this.Wraith.UseVisualStyleBackColor = true;
+            this.Wraith.Click += new System.EventHandler(this.Wraith_Click);
             // 
             // Pathfinder_2
             // 
             this.Pathfinder_2.AutoSize = true;
             this.Pathfinder_2.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.Pathfinder;
+            this.Pathfinder_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.5F);
             this.Pathfinder_2.Location = new System.Drawing.Point(776, 318);
             this.Pathfinder_2.Name = "Pathfinder_2";
             this.Pathfinder_2.Size = new System.Drawing.Size(158, 281);
             this.Pathfinder_2.TabIndex = 9;
+            this.Pathfinder_2.Text = "Pathfinder";
             this.Pathfinder_2.UseVisualStyleBackColor = true;
+            this.Pathfinder_2.Click += new System.EventHandler(this.Pathfinder_2_Click);
             // 
             // Pathfinder
             // 
             this.Pathfinder.AutoSize = true;
             this.Pathfinder.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.Pathfinder;
+            this.Pathfinder.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.5F);
             this.Pathfinder.Location = new System.Drawing.Point(776, 12);
             this.Pathfinder.Name = "Pathfinder";
             this.Pathfinder.Size = new System.Drawing.Size(158, 281);
             this.Pathfinder.TabIndex = 8;
+            this.Pathfinder.Text = "Pathfinder";
             this.Pathfinder.UseVisualStyleBackColor = true;
+            this.Pathfinder.Click += new System.EventHandler(this.Pathfinder_Click);
             // 
             // Lifeline2
             // 
             this.Lifeline2.AutoSize = true;
             this.Lifeline2.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.Lifeline;
+            this.Lifeline2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.5F);
             this.Lifeline2.Location = new System.Drawing.Point(580, 318);
             this.Lifeline2.Name = "Lifeline2";
             this.Lifeline2.Size = new System.Drawing.Size(158, 281);
             this.Lifeline2.TabIndex = 7;
+            this.Lifeline2.Text = "Lifeline";
             this.Lifeline2.UseVisualStyleBackColor = true;
+            this.Lifeline2.Click += new System.EventHandler(this.Lifeline2_Click);
             // 
             // Lifeline
             // 
             this.Lifeline.AutoSize = true;
             this.Lifeline.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.Lifeline;
+            this.Lifeline.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.5F);
             this.Lifeline.Location = new System.Drawing.Point(580, 12);
             this.Lifeline.Name = "Lifeline";
             this.Lifeline.Size = new System.Drawing.Size(158, 281);
             this.Lifeline.TabIndex = 6;
+            this.Lifeline.Text = "Lifeline";
             this.Lifeline.UseVisualStyleBackColor = true;
+            this.Lifeline.Click += new System.EventHandler(this.Lifeline_Click);
             // 
             // Caustic_2
             // 
             this.Caustic_2.AutoSize = true;
             this.Caustic_2.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.Caustic;
+            this.Caustic_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.5F);
             this.Caustic_2.Location = new System.Drawing.Point(391, 318);
             this.Caustic_2.Name = "Caustic_2";
             this.Caustic_2.Size = new System.Drawing.Size(158, 281);
             this.Caustic_2.TabIndex = 5;
+            this.Caustic_2.Text = "Caustic";
             this.Caustic_2.UseVisualStyleBackColor = true;
+            this.Caustic_2.Click += new System.EventHandler(this.Caustic_2_Click);
             // 
             // Caustic
             // 
             this.Caustic.AutoSize = true;
             this.Caustic.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.Caustic;
+            this.Caustic.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.5F);
             this.Caustic.Location = new System.Drawing.Point(391, 12);
             this.Caustic.Name = "Caustic";
             this.Caustic.Size = new System.Drawing.Size(158, 281);
             this.Caustic.TabIndex = 4;
+            this.Caustic.Text = "Caustic";
             this.Caustic.UseVisualStyleBackColor = true;
+            this.Caustic.Click += new System.EventHandler(this.Caustic_Click);
             // 
             // Bloodhound_2
             // 
             this.Bloodhound_2.AutoSize = true;
             this.Bloodhound_2.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.BloodHound;
+            this.Bloodhound_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.5F);
             this.Bloodhound_2.Location = new System.Drawing.Point(196, 318);
             this.Bloodhound_2.Name = "Bloodhound_2";
             this.Bloodhound_2.Size = new System.Drawing.Size(158, 281);
             this.Bloodhound_2.TabIndex = 3;
+            this.Bloodhound_2.Text = "Bloodhound";
             this.Bloodhound_2.UseVisualStyleBackColor = true;
             this.Bloodhound_2.Click += new System.EventHandler(this.Bloodhound_2_Click);
             // 
@@ -127,10 +150,12 @@
             // 
             this.Bloodhound.AutoSize = true;
             this.Bloodhound.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.BloodHound;
+            this.Bloodhound.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.5F);
             this.Bloodhound.Location = new System.Drawing.Point(196, 12);
             this.Bloodhound.Name = "Bloodhound";
             this.Bloodhound.Size = new System.Drawing.Size(158, 281);
             this.Bloodhound.TabIndex = 2;
+            this.Bloodhound.Text = "Bloodhound";
             this.Bloodhound.UseVisualStyleBackColor = true;
             this.Bloodhound.Click += new System.EventHandler(this.Bloodhound_Click);
             // 
@@ -164,11 +189,14 @@
             // 
             this.Wraith_2.AutoSize = true;
             this.Wraith_2.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.Wraith;
+            this.Wraith_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.5F);
             this.Wraith_2.Location = new System.Drawing.Point(961, 318);
             this.Wraith_2.Name = "Wraith_2";
             this.Wraith_2.Size = new System.Drawing.Size(158, 281);
             this.Wraith_2.TabIndex = 11;
+            this.Wraith_2.Text = "Wraith";
             this.Wraith_2.UseVisualStyleBackColor = true;
+            this.Wraith_2.Click += new System.EventHandler(this.Wraith_2_Click);
             // 
             // Form_EasyMode
             // 

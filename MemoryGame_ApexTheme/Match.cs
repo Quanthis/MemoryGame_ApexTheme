@@ -5,16 +5,16 @@ using System.Diagnostics;
 
 namespace MemoryGame_ApexTheme
 {
-    public class Match : ReturnMatch
+    public class Match : ReturnMatch, ButtonsToDispose
     {
-        private string firstButtonPressed;
-        private string secondButtonPressed;
+        private Button firstButtonPressed;
+        private Button secondButtonPressed;
         //private string thirdButtonPressed;
 
 
         public Match() { }
 
-        public Match(string button_1, string button_2)
+        public Match(Button button_1, Button button_2)
         {
             firstButtonPressed = button_1;
             secondButtonPressed = button_2;
@@ -31,23 +31,23 @@ namespace MemoryGame_ApexTheme
             firstButtonPressed = null;
         }
 
-        public string[] GetButtons()
+        public Button[] GetButtons()
         {
-            string[] result = { firstButtonPressed, secondButtonPressed };
+            Button[] result = { firstButtonPressed, secondButtonPressed };
             //Debug.WriteLine("From GetButtons(): 1." + result[0] + " 2." + result[1]);
             return result;
         }
 
 
-        public void AddButton(string newButtonName)
+        public void AddButton(Button newButton)
         {
             if (firstButtonPressed == null)
             {
-                firstButtonPressed = newButtonName;
+                firstButtonPressed = newButton;
             }
             else
             {
-                secondButtonPressed = newButtonName;
+                secondButtonPressed = newButton;
             }
 
         }
@@ -56,22 +56,33 @@ namespace MemoryGame_ApexTheme
         {
             if (firstButtonPressed != null && secondButtonPressed != null )
             {
+                if (firstButtonPressed.Name != secondButtonPressed.Name)
+                {
+                    if (firstButtonPressed.Text == secondButtonPressed.Text)
+                    {
+                        DisposeButtons();
+                        return true;
+                    }
+                    else
+                    {
+                        NullButtons();
+                        return false;
+                    }
+                }
 
-                if (firstButtonPressed == secondButtonPressed)
-                {
-                    NullButtons();
-                    return true;
-                }
-                else
-                {
-                    NullButtons();
-                    return false;
-                }
+                else return false;
             }
             else
             {
                 return false;
             }
+        }
+
+        public void DisposeButtons()
+        {
+            firstButtonPressed.Dispose();
+            secondButtonPressed.Dispose();
+            NullButtons();
         }
     }
 }

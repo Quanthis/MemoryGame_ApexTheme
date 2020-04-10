@@ -104,5 +104,26 @@
   <ItemGroup>
     <None Include="Resources\QuestionMark.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banglore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BloodHound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banglore1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Caustic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lifeline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pathfinder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wraith.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

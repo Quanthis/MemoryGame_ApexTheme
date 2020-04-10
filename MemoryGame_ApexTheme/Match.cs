@@ -7,8 +7,9 @@ namespace MemoryGame_ApexTheme
 {
     public class Match : ReturnMatch
     {
-        public static string firstButtonPressed;
-        public static string  secondButtonPressed;
+        private string firstButtonPressed;
+        private string secondButtonPressed;
+        //private string thirdButtonPressed;
 
 
         public Match() { }
@@ -19,6 +20,17 @@ namespace MemoryGame_ApexTheme
             secondButtonPressed = button_2;
         }
 
+        public void NullButtons()
+        {
+            firstButtonPressed = null;
+            secondButtonPressed = null;   
+        }
+
+        public void NullFirstButton()
+        {
+            firstButtonPressed = null;
+        }
+
         public string[] GetButtons()
         {
             string[] result = { firstButtonPressed, secondButtonPressed };
@@ -26,32 +38,33 @@ namespace MemoryGame_ApexTheme
             return result;
         }
 
-        public void SetNewButtons(Button button_1, Button button_2)
-        {
-            firstButtonPressed = button_1.Name;
-            secondButtonPressed = button_2.Name;
-        }
 
-        public static void SetFirstButton(Button button_1)         //in future, just lock one and check if locked to get second button
+        public void AddButton(string newButtonName)
         {
-            firstButtonPressed = button_1.Name;
-        }
+            if (firstButtonPressed == null)
+            {
+                firstButtonPressed = newButtonName;
+            }
+            else
+            {
+                secondButtonPressed = newButtonName;
+            }
 
-        public static void SetSecondButton(Button button_2)
-        {
-            secondButtonPressed = button_2.Name;
         }
 
         public bool Matched()
         {
-            if (firstButtonPressed != null || secondButtonPressed != null)
+            if (firstButtonPressed != null && secondButtonPressed != null )
             {
+
                 if (firstButtonPressed == secondButtonPressed)
                 {
+                    NullButtons();
                     return true;
                 }
                 else
                 {
+                    NullButtons();
                     return false;
                 }
             }

@@ -26,27 +26,13 @@ namespace MemoryGame_ApexTheme
             CheckForDisposing();
         }
 
-        private void Banglore_1_Click(object sender, EventArgs e)
-        {
-            Match.firstButtonPressed = Banglore_1.Text;
-            disposeButtons = CheckForMatches.Matched();
-            DisposeButton();
-        }
-
-        private void Banglore_2_Click(object sender, EventArgs e)
-        {
-            Match.secondButtonPressed = Banglore_2.Text;
-            disposeButtons = CheckForMatches.Matched();
-            DisposeButton();
-        }
-
         private async Task CheckForDisposing()
         {
             await Task.Run(() =>
             {
                 while (true)
                 {
-                    Debug.WriteLine(disposeButtons);
+                    //Debug.WriteLine(disposeButtons);
                     if (disposeButtons)
                     {
                         string[] buttonsToDispose = CheckForMatches.GetButtons();
@@ -58,7 +44,7 @@ namespace MemoryGame_ApexTheme
                             {
                                 if (button.Name.Contains("Banglore"))
                                 {
-                                    //DisposeButton(button.Text);
+                                    //DisposeButtons(button.Text);
                                     ++i;
                                 }
 
@@ -71,7 +57,7 @@ namespace MemoryGame_ApexTheme
             });
         }
 
-        private void DisposeButton(string buttonText)
+        private void DisposeButtons(string buttonText)
         {
             foreach(Button button in Controls.OfType<Button>())
             {
@@ -88,7 +74,7 @@ namespace MemoryGame_ApexTheme
             }*/
         }
 
-        private void DisposeButton()
+        private void DisposeButtons()
         {
             /*foreach(Button button in Controls.OfType<Button>())
             {
@@ -98,11 +84,46 @@ namespace MemoryGame_ApexTheme
                 }
             }*/
 
+            disposeButtons = CheckForMatches.Matched();
+            
             if (disposeButtons)
             {
                 Banglore_1.Dispose();
                 Banglore_2.Dispose();
+
+
             }
+
+            disposeButtons = CheckForMatches.Matched();
         }
+
+        #region Buttons
+        private void Banglore_1_Click(object sender, EventArgs e)
+        {
+            CheckForMatches.AddButton(Banglore_1.Text);
+            DisposeButtons();
+        }
+
+        private void Banglore_2_Click(object sender, EventArgs e)
+        {
+            CheckForMatches.AddButton(Banglore_2.Text);
+            DisposeButtons();
+        }
+
+        private void Bloodhound_Click(object sender, EventArgs e)
+        {
+            CheckForMatches.AddButton(Bloodhound.Text);
+            DisposeButtons();
+        }
+
+        private void Bloodhound_2_Click(object sender, EventArgs e)
+        {
+            CheckForMatches.AddButton(Bloodhound_2.Text);
+            DisposeButtons();
+        }
+
+        #endregion
+
+
     }
 }

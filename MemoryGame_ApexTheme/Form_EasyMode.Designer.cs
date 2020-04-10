@@ -121,6 +121,7 @@
             this.Bloodhound_2.Size = new System.Drawing.Size(158, 281);
             this.Bloodhound_2.TabIndex = 3;
             this.Bloodhound_2.UseVisualStyleBackColor = true;
+            this.Bloodhound_2.Click += new System.EventHandler(this.Bloodhound_2_Click);
             // 
             // Bloodhound
             // 
@@ -131,6 +132,7 @@
             this.Bloodhound.Size = new System.Drawing.Size(158, 281);
             this.Bloodhound.TabIndex = 2;
             this.Bloodhound.UseVisualStyleBackColor = true;
+            this.Bloodhound.Click += new System.EventHandler(this.Bloodhound_Click);
             // 
             // Banglore_2
             // 

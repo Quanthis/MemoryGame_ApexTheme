@@ -141,6 +141,7 @@
             this.Banglore_2.Size = new System.Drawing.Size(158, 281);
             this.Banglore_2.TabIndex = 1;
             this.Banglore_2.UseVisualStyleBackColor = true;
+            this.Banglore_2.Click += new System.EventHandler(this.Banglore_2_Click);
             // 
             // Banglore_1
             // 
@@ -151,6 +152,7 @@
             this.Banglore_1.Size = new System.Drawing.Size(158, 281);
             this.Banglore_1.TabIndex = 0;
             this.Banglore_1.UseVisualStyleBackColor = true;
+            this.Banglore_1.Click += new System.EventHandler(this.Banglore_1_Click);
             // 
             // Wraith_2
             // 
@@ -166,7 +168,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1152, 654);
+            this.BackColor = System.Drawing.Color.DarkRed;
+            this.ClientSize = new System.Drawing.Size(1145, 620);
             this.Controls.Add(this.Wraith_2);
             this.Controls.Add(this.Wraith);
             this.Controls.Add(this.Pathfinder_2);

@@ -136,10 +136,12 @@
             // 
             this.Banglore_2.AutoSize = true;
             this.Banglore_2.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.Banglore1;
+            this.Banglore_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
             this.Banglore_2.Location = new System.Drawing.Point(12, 318);
             this.Banglore_2.Name = "Banglore_2";
             this.Banglore_2.Size = new System.Drawing.Size(158, 281);
             this.Banglore_2.TabIndex = 1;
+            this.Banglore_2.Text = "Banglore";
             this.Banglore_2.UseVisualStyleBackColor = true;
             this.Banglore_2.Click += new System.EventHandler(this.Banglore_2_Click);
             // 
@@ -147,10 +149,12 @@
             // 
             this.Banglore_1.AutoSize = true;
             this.Banglore_1.BackgroundImage = global::MemoryGame_ApexTheme.Properties.Resources.Banglore1;
+            this.Banglore_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
             this.Banglore_1.Location = new System.Drawing.Point(12, 12);
             this.Banglore_1.Name = "Banglore_1";
             this.Banglore_1.Size = new System.Drawing.Size(158, 281);
             this.Banglore_1.TabIndex = 0;
+            this.Banglore_1.Text = "Banglore";
             this.Banglore_1.UseVisualStyleBackColor = true;
             this.Banglore_1.Click += new System.EventHandler(this.Banglore_1_Click);
             // 

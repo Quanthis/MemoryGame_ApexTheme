@@ -1,8 +1,4 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
@@ -19,10 +15,16 @@ namespace MemoryGame_ApexTheme
             InitializeComponent();
         }
 
-        private async void Form_EasyMode_Load(object sender, EventArgs e)
+        private async void Form_EasyMode_Load(object sender, EventArgs e)                   
         {
+
         }
 
+
+        public void GetButtonsLocations()
+        {
+
+        }
 
         #region Buttons
         private void Banglore_1_Click(object sender, EventArgs e)

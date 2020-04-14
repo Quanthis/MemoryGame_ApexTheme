@@ -23,10 +23,7 @@ namespace MemoryGame_ApexTheme
 
         public void NullButtons()
         {
-            Thread.Sleep(1000);
-
-
-            firstButtonPressed.ImageIndex = 1;
+            firstButtonPressed.ImageIndex = 1;              //covering cards
             secondButtonPressed.ImageIndex = 1;
 
             firstButtonPressed = null;
@@ -37,7 +34,6 @@ namespace MemoryGame_ApexTheme
         public Button[] GetButtons()
         {
             Button[] result = { firstButtonPressed, secondButtonPressed };
-            //Debug.WriteLine("From GetButtons(): 1." + result[0] + " 2." + result[1]);
             return result;
         }
 
@@ -47,8 +43,7 @@ namespace MemoryGame_ApexTheme
             if (firstButtonPressed == null)
             {
                 firstButtonPressed = newButton;
-                firstButtonPressed.ImageIndex = 0;
-                Thread.Sleep(1000);
+                firstButtonPressed.ImageIndex = 0;                      //uncovering card
             }
             else
             { 
@@ -56,7 +51,6 @@ namespace MemoryGame_ApexTheme
                 secondButtonPressed.ImageIndex = 0;
                 Thread.Sleep(1000);
             }
-
         }
 
         public bool Matched()
@@ -76,8 +70,10 @@ namespace MemoryGame_ApexTheme
                         return false;
                     }
                 }
-
-                else return false;
+                else
+                {
+                    return false;
+                }
             }
             else
             {
@@ -89,7 +85,9 @@ namespace MemoryGame_ApexTheme
         {
             firstButtonPressed.Dispose();
             secondButtonPressed.Dispose();
-            NullButtons();
+
+            firstButtonPressed = null;
+            secondButtonPressed = null;
         }
     }
 }

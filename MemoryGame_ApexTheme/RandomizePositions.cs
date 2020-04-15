@@ -4,21 +4,22 @@ using System.Threading.Tasks;
 
 namespace MemoryGame_ApexTheme
 {
-    public class RandomizePositions : NewPositions
+    public class RandomizePositions 
     {
         uint buttonsNumber;
-        uint[,] possiblePositions;
+        CardPositions[] cardPositions;
 
         RandomizePositions(uint howManyNewPositions, uint[,] currentPositions)
         {
             buttonsNumber = howManyNewPositions;
-            possiblePositions = currentPositions;
         }
 
-        public uint[,] ReturnNewPositions()
+        /*public CardPositions[] ReturnNewPositions()
         {
-            uint[,] possblePositions = new uint[buttonsNumber, 2];
-            return possiblePositions;
-        }
+            for(uint i = 0; i < buttonsNumber; i++)
+            {
+                
+            }
+        }*/
     }
 }

@@ -9,6 +9,7 @@ namespace MemoryGame_ApexTheme
     public partial class Form_EasyMode : Form
     {
         Match CheckForMatches = new Match();
+        CardPositions[] positions;
 
         public Form_EasyMode()
         {
@@ -17,13 +18,44 @@ namespace MemoryGame_ApexTheme
 
         private async void Form_EasyMode_Load(object sender, EventArgs e)                   
         {
-
+            positions = GetButtonsLocations();
         }
 
 
-        public void GetButtonsLocations()
+        public CardPositions[] GetButtonsLocations()
         {
+            uint buttons = CalculateButtons();
 
+            CardPositions[] cardsPositions = new CardPositions[buttons];
+            Debug.WriteLine(buttons);
+
+            ushort i = 0;
+
+            foreach (Button button in Controls.OfType<Button>())
+            {
+
+                cardsPositions[i] = new CardPositions();
+                cardsPositions[i].X = button.Location.X;
+                cardsPositions[i].Y = button.Location.Y;
+
+                Debug.WriteLine("X: " + cardsPositions[i].X + " Y: " + cardsPositions[i].Y);
+                ++i;
+                
+            }
+
+            return cardsPositions;
+        }
+
+        public uint CalculateButtons()
+        {
+            uint result = 0;
+
+            foreach(var button in Controls.OfType<Button>())
+            {
+                ++result;
+            }
+
+            return result;
         }
 
         #region Buttons

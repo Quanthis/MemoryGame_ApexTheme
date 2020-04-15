@@ -5,6 +5,6 @@ namespace MemoryGame_ApexTheme
 {
     interface NewPositions
     {
-        uint[,] ReturnNewPositions();
+        CardPositions[] ReturnNewPositions();
     }
 }

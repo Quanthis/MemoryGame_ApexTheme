@@ -10,16 +10,9 @@ namespace MemoryGame_ApexTheme
     {
         private Button firstButtonPressed;
         private Button secondButtonPressed;
-        //private string thirdButtonPressed;
 
 
         public Match() { }
-
-        public Match(Button button_1, Button button_2)
-        {
-            firstButtonPressed = button_1;
-            secondButtonPressed = button_2;
-        }
 
         public void NullButtons()
         {
@@ -43,19 +36,24 @@ namespace MemoryGame_ApexTheme
             if (firstButtonPressed == null)
             {
                 firstButtonPressed = newButton;
-                firstButtonPressed.ImageIndex = 0;                      //uncovering card
+                Debug.WriteLine("Before index changing: " + firstButtonPressed.ImageIndex);
+                firstButtonPressed.ImageIndex = 0;                                           //uncovering card
+                Debug.WriteLine("After index changing: " + firstButtonPressed.ImageIndex);
             }
             else
             { 
                 secondButtonPressed = newButton;
+                Debug.WriteLine("Before index changing: " + secondButtonPressed.ImageIndex);
                 secondButtonPressed.ImageIndex = 0;
-                Thread.Sleep(1000);
+                secondButtonPressed.Refresh();
+                Debug.WriteLine("After index changing: " + secondButtonPressed.ImageIndex);
+                Thread.Sleep(500);
             }
         }
 
         public bool Matched()
         {
-            if (firstButtonPressed != null && secondButtonPressed != null )
+            if (firstButtonPressed != null && secondButtonPressed != null)
             {
                 if (firstButtonPressed.Name != secondButtonPressed.Name)
                 {

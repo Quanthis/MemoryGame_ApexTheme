@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.Linq;
+using System.Drawing;
 
 namespace MemoryGame_ApexTheme
 {
@@ -19,8 +20,21 @@ namespace MemoryGame_ApexTheme
         private async void Form_EasyMode_Load(object sender, EventArgs e)                   
         {
             positions = GetButtonsLocations();
+            //Shuffle();
         }
 
+        public void Shuffle()
+        {
+            RandomizePositions randomize = new RandomizePositions(CalculateButtons(), positions);
+            uint i = 0;
+            foreach(Button button in Controls.OfType<Button>())
+            {
+                int posX = randomize.ReturnNewPositions()[i].X;
+                int posY = randomize.ReturnNewPositions()[i].Y;
+
+                button.Location = new Point(posX, posY);
+            }
+        }
 
         public CardPositions[] GetButtonsLocations()
         {

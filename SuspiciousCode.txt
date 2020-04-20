@@ -33,3 +33,19 @@
 
 		}
 }
+
+        public CardPositions[] ReturnNewPositions()
+        {
+            CardPositions[] shuffled = new CardPositions[buttonsNumber];
+            Random r = new Random();
+
+            for (uint i = 0; i < buttonsNumber; i++)
+            {
+                shuffled[i] = new CardPositions();
+                //shuffled[i] = (CardPositions)cardPositions.OrderBy(n => Guid.NewGuid());
+                shuffled[i].X = r.Next(cardPositions.Min().X, cardPositions.Max().X);
+                shuffled[i].Y = r.Next(cardPositions.Min().Y, cardPositions.Max().Y);
+            }
+
+            return shuffled;
+        }

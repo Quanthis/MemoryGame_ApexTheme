@@ -7,23 +7,39 @@ namespace MemoryGame_ApexTheme
     {
         public int X;
         public int Y;
-        private int index = 0;
+        private int index;
+
+        private static int globalIndex = -1;
 
         public CardPositions(int posX, int posY)
         {
             X = posX;
             Y = posY;
-            index = Interlocked.Increment(ref index);
+
+            index = Interlocked.Increment(ref globalIndex);
+        }
+
+        public CardPositions(int posX, int posY, int newIndex)
+        {
+            X = posX;
+            Y = posY;
+            index = newIndex;
         }
 
         public CardPositions()
         {
-
+            index = Interlocked.Increment(ref globalIndex);
         }
 
         public int GetIndex()
         {
             return index;
+        }
+
+        public void SetNewPositions(int posX, int posY)
+        {
+            X = posX;
+            Y = posY;
         }
     }
 }

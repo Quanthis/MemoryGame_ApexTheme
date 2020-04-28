@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -18,14 +18,38 @@ namespace MemoryGame_ApexTheme
 
         public CardPositions[] ReturnNewPositions()
         {
-            CardPositions[] shuffled = new CardPositions[buttonsNumber];
-            /*Random r = new Random();
+            CardPositions[] shuffledIndexes = new CardPositions[buttonsNumber];
+            Random r = new Random();
 
-            for (uint i = 0; i < buttonsNumber; i++)
+            int[] indexes = new int[buttonsNumber];
+
+            for(uint i = 0; i < buttonsNumber; ++i)
             {
-                shuffled[i] = new CardPositions();
-                shuffled[i] = r.Next(shuffled[i].GetIndex().Min(), shuffled[i].GetIndex().Max());
-            }*/
+                indexes[i] = cardPositions[i].GetIndex();                           //getting array of card positions indexes
+                //Debug.WriteLine(indexes[i]);
+            }
+
+            // Okay, now I think I will just create new objects CardPositions and return it, instead of modyfing existing array
+
+            int[] newIndexes = new int[buttonsNumber];
+
+            for(uint i = 0; i < buttonsNumber ; ++i)
+            {
+                newIndexes[i] = r.Next(indexes.Min(), indexes.Max());
+                //Debug.WriteLine("New index: " + newIndexes[i]);
+            }
+
+            for (uint i = 0; i <buttonsNumber; ++i)
+            {
+                shuffledIndexes[i] = new CardPositions(cardPositions[i].X, cardPositions[i].Y, newIndexes[i]);
+            }
+
+            CardPositions[] shuffled = new CardPositions[buttonsNumber];
+            for (uint i = 0; i < buttonsNumber; ++i)
+            {
+                shuffled[i] = new CardPositions(shuffledIndexes[i].X, shuffledIndexes[i].Y, shuffledIndexes[i].GetIndex());
+                Debug.WriteLine("Shuffled values: X: " + shuffled[i].X + " Y: " + shuffled[i].Y + " index: " + shuffled[i].GetIndex());
+            }
 
             return shuffled;
         }

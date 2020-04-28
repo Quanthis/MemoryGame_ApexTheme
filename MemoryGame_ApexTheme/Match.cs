@@ -36,17 +36,14 @@ namespace MemoryGame_ApexTheme
             if (firstButtonPressed == null)
             {
                 firstButtonPressed = newButton;
-                Debug.WriteLine("Before index changing: " + firstButtonPressed.ImageIndex);
                 firstButtonPressed.ImageIndex = 0;                                           //uncovering card
-                Debug.WriteLine("After index changing: " + firstButtonPressed.ImageIndex);
             }
             else
             { 
                 secondButtonPressed = newButton;
-                Debug.WriteLine("Before index changing: " + secondButtonPressed.ImageIndex);
                 secondButtonPressed.ImageIndex = 0;
                 secondButtonPressed.Refresh();
-                Debug.WriteLine("After index changing: " + secondButtonPressed.ImageIndex);
+
                 Thread.Sleep(500);
             }
         }

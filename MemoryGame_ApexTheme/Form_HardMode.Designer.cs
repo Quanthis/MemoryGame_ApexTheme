@@ -95,6 +95,9 @@
             this.jojow_2 = new System.Windows.Forms.Button();
             this.TrialsCounter = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.Vulnat = new System.Windows.Forms.Button();
+            this.Vulnat_Images = new System.Windows.Forms.ImageList(this.components);
+            this.Vulnat_2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Timer
@@ -802,7 +805,7 @@
             this.jojow.BackColor = System.Drawing.Color.Black;
             this.jojow.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
             this.jojow.ImageIndex = 1;
-            this.jojow.ImageList = this.Me_Images;
+            this.jojow.ImageList = this.jojo;
             this.jojow.Location = new System.Drawing.Point(1117, 203);
             this.jojow.Name = "jojow";
             this.jojow.Size = new System.Drawing.Size(79, 140);
@@ -816,7 +819,7 @@
             this.jojow_2.BackColor = System.Drawing.Color.Black;
             this.jojow_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
             this.jojow_2.ImageIndex = 1;
-            this.jojow_2.ImageList = this.Me_Images;
+            this.jojow_2.ImageList = this.jojo;
             this.jojow_2.Location = new System.Drawing.Point(1237, 203);
             this.jojow_2.Name = "jojow_2";
             this.jojow_2.Size = new System.Drawing.Size(79, 140);
@@ -847,12 +850,49 @@
             this.label2.Text = "Trials Count:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Vulnat
+            // 
+            this.Vulnat.BackColor = System.Drawing.Color.Black;
+            this.Vulnat.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Vulnat.ImageIndex = 1;
+            this.Vulnat.ImageList = this.Vulnat_Images;
+            this.Vulnat.Location = new System.Drawing.Point(1117, 370);
+            this.Vulnat.Name = "Vulnat";
+            this.Vulnat.Size = new System.Drawing.Size(79, 140);
+            this.Vulnat.TabIndex = 82;
+            this.Vulnat.Text = "Vulnat";
+            this.Vulnat.UseVisualStyleBackColor = false;
+            this.Vulnat.Click += new System.EventHandler(this.Vulnat_Click);
+            // 
+            // Vulnat_Images
+            // 
+            this.Vulnat_Images.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("Vulnat_Images.ImageStream")));
+            this.Vulnat_Images.TransparentColor = System.Drawing.Color.Transparent;
+            this.Vulnat_Images.Images.SetKeyName(0, "Vulnat.png");
+            this.Vulnat_Images.Images.SetKeyName(1, "Covered_Card.PNG");
+            // 
+            // Vulnat_2
+            // 
+            this.Vulnat_2.BackColor = System.Drawing.Color.Black;
+            this.Vulnat_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Vulnat_2.ImageIndex = 1;
+            this.Vulnat_2.ImageList = this.Vulnat_Images;
+            this.Vulnat_2.Location = new System.Drawing.Point(1237, 370);
+            this.Vulnat_2.Name = "Vulnat_2";
+            this.Vulnat_2.Size = new System.Drawing.Size(79, 140);
+            this.Vulnat_2.TabIndex = 83;
+            this.Vulnat_2.Text = "Vulnat";
+            this.Vulnat_2.UseVisualStyleBackColor = false;
+            this.Vulnat_2.Click += new System.EventHandler(this.Vulnat_2_Click);
+            // 
             // Form_HardMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(1584, 862);
+            this.Controls.Add(this.Vulnat_2);
+            this.Controls.Add(this.Vulnat);
             this.Controls.Add(this.TrialsCounter);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.jojow_2);
@@ -972,5 +1012,8 @@
         private System.Windows.Forms.Button jojow_2;
         private System.Windows.Forms.Label TrialsCounter;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button Vulnat;
+        private System.Windows.Forms.ImageList Vulnat_Images;
+        private System.Windows.Forms.Button Vulnat_2;
     }
 }

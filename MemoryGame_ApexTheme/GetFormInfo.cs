@@ -86,7 +86,7 @@ namespace MemoryGame_ApexTheme
                     callingForm.Dispose();
                 }*/
                 int minutesElapsed = (int)(secondsElapsed / 60);
-                int rest = (int)(secondsElapsed - secondsElapsed / 60);
+                int rest = (int)(secondsElapsed - minutesElapsed * 60);
                 whereToSave.Text = minutesElapsed + " min " + rest + " s";
             }
         }

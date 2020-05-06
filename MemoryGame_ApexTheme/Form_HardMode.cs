@@ -276,5 +276,17 @@ namespace MemoryGame_ApexTheme
             CheckForMatches.AddButton(jojow_2);
             CheckForMatches.Matched();
         }
+
+        private void Vulnat_Click(object sender, EventArgs e)
+        {
+            CheckForMatches.AddButton(Vulnat);
+            CheckForMatches.Matched();
+        }
+
+        private void Vulnat_2_Click(object sender, EventArgs e)
+        {
+            CheckForMatches.AddButton(Vulnat_2);
+            CheckForMatches.Matched();
+        }
     }
 }

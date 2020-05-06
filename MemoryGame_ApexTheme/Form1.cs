@@ -27,7 +27,6 @@ namespace MemoryGame_ApexTheme
         private void TurnEasyMode_Click(object sender, EventArgs e)
         {
             LoadOtherForm(new Form_EasyMode());
-            //Dispose();
         }
         
 
@@ -39,6 +38,16 @@ namespace MemoryGame_ApexTheme
         private void TurnHardMode_Click(object sender, EventArgs e)
         {
             LoadOtherForm(new Form_HardMode());
+        }
+
+        private void Copyright_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Although code is open source, all images belong to EA and Respawn corporations. Therefore, commercial use is forbidden.");
+        }
+
+        private void Contributors_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Quanthis/MemoryGame_ApexTheme/graphs/contributors");
         }
     }
 }

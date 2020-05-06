@@ -48,6 +48,11 @@
             this.Bloodhound = new System.Windows.Forms.Button();
             this.Banglore_2 = new System.Windows.Forms.Button();
             this.Banglore_1 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.TimeElapsed = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.TrialsCounter = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Banglore_Images
@@ -271,12 +276,66 @@
             this.Banglore_1.UseVisualStyleBackColor = true;
             this.Banglore_1.Click += new System.EventHandler(this.Banglore_1_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.Location = new System.Drawing.Point(1181, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 20);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Time elapsed:";
+            // 
+            // TimeElapsed
+            // 
+            this.TimeElapsed.BackColor = System.Drawing.Color.White;
+            this.TimeElapsed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.TimeElapsed.Location = new System.Drawing.Point(1181, 168);
+            this.TimeElapsed.Name = "TimeElapsed";
+            this.TimeElapsed.Size = new System.Drawing.Size(107, 20);
+            this.TimeElapsed.TabIndex = 13;
+            this.TimeElapsed.Text = "0";
+            this.TimeElapsed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label2.Location = new System.Drawing.Point(1181, 371);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 20);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Trials Count:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TrialsCounter
+            // 
+            this.TrialsCounter.BackColor = System.Drawing.Color.White;
+            this.TrialsCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.TrialsCounter.Location = new System.Drawing.Point(1181, 471);
+            this.TrialsCounter.Name = "TrialsCounter";
+            this.TrialsCounter.Size = new System.Drawing.Size(107, 20);
+            this.TrialsCounter.TabIndex = 15;
+            this.TrialsCounter.Text = "0";
+            this.TrialsCounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form_EasyMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
-            this.ClientSize = new System.Drawing.Size(1145, 620);
+            this.ClientSize = new System.Drawing.Size(1345, 620);
+            this.Controls.Add(this.TrialsCounter);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.TimeElapsed);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Wraith_2);
             this.Controls.Add(this.Wraith);
             this.Controls.Add(this.Pathfinder_2);
@@ -317,5 +376,10 @@
         private System.Windows.Forms.ImageList Wraith_Images;
         private System.Windows.Forms.ImageList Pathfinder_Images;
         private System.Windows.Forms.ImageList Lifeline_Images;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label TimeElapsed;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label TrialsCounter;
     }
 }

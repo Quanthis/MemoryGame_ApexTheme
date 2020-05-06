@@ -53,13 +53,13 @@ namespace MemoryGame_ApexTheme
             return cardsPositions;
         }
 
-        public void Shuffle()
+        public async void Shuffle()
         {
             uint buttonNo = CalculateButtons();
 
             RandomizePositions randomize = new RandomizePositions(buttonNo, positions);
             CardPositions[] cardPositions = new CardPositions[buttonNo];
-            cardPositions = randomize.ReturnNewPositions();
+            cardPositions = await randomize.ReturnNewPositions();
 
             uint i = 0;
             foreach (Button button in checkedForm.Controls.OfType<Button>())
@@ -71,6 +71,23 @@ namespace MemoryGame_ApexTheme
                 button.Refresh();
 
                 ++i;
+            }
+        }
+
+        public static void Timer(ref long secondsElapsed, Label whereToSave, Form callingForm)
+        {
+            ++secondsElapsed;
+            whereToSave.Text = secondsElapsed.ToString() + "s";
+            if (secondsElapsed >= 60)
+            {
+                /*if(secondsElapsed >= 3600)
+                {
+                    MessageBox.Show("You've lost.", "Timed out!", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    callingForm.Dispose();
+                }*/
+                int minutesElapsed = (int)(secondsElapsed / 60);
+                int rest = (int)(secondsElapsed - secondsElapsed / 60);
+                whereToSave.Text = minutesElapsed + " min " + rest + " s";
             }
         }
     }

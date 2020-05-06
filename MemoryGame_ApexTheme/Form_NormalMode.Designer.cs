@@ -84,6 +84,11 @@
             this.ShotgunAmmo_2 = new System.Windows.Forms.Button();
             this.SniperAmmo = new System.Windows.Forms.Button();
             this.SniperAmmo_2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Timer = new System.Windows.Forms.Timer(this.components);
+            this.TimeElapsed = new System.Windows.Forms.Label();
+            this.TrialsCounter = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Banglore
@@ -716,12 +721,66 @@
             this.SniperAmmo_2.UseVisualStyleBackColor = false;
             this.SniperAmmo_2.Click += new System.EventHandler(this.SniperAmmo_2_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.Location = new System.Drawing.Point(1096, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 20);
+            this.label1.TabIndex = 36;
+            this.label1.Text = "Time Elapsed:";
+            // 
+            // Timer
+            // 
+            this.Timer.Enabled = true;
+            this.Timer.Interval = 1000;
+            this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
+            // 
+            // TimeElapsed
+            // 
+            this.TimeElapsed.BackColor = System.Drawing.Color.White;
+            this.TimeElapsed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.TimeElapsed.Location = new System.Drawing.Point(1096, 112);
+            this.TimeElapsed.Name = "TimeElapsed";
+            this.TimeElapsed.Size = new System.Drawing.Size(109, 20);
+            this.TimeElapsed.TabIndex = 37;
+            this.TimeElapsed.Text = "0";
+            this.TimeElapsed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TrialsCounter
+            // 
+            this.TrialsCounter.BackColor = System.Drawing.Color.White;
+            this.TrialsCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.TrialsCounter.Location = new System.Drawing.Point(1096, 284);
+            this.TrialsCounter.Name = "TrialsCounter";
+            this.TrialsCounter.Size = new System.Drawing.Size(107, 20);
+            this.TrialsCounter.TabIndex = 39;
+            this.TrialsCounter.Text = "0";
+            this.TrialsCounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label2.Location = new System.Drawing.Point(1096, 213);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 20);
+            this.label2.TabIndex = 38;
+            this.label2.Text = "Trials Count:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form_NormalMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
-            this.ClientSize = new System.Drawing.Size(1097, 707);
+            this.ClientSize = new System.Drawing.Size(1237, 707);
+            this.Controls.Add(this.TrialsCounter);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.TimeElapsed);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.SniperAmmo_2);
             this.Controls.Add(this.SniperAmmo);
             this.Controls.Add(this.ShotgunAmmo_2);
@@ -762,6 +821,7 @@
             this.Text = "Form_NormalMode";
             this.Load += new System.EventHandler(this.Form_NormalMode_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -821,5 +881,10 @@
         private System.Windows.Forms.Button ShotgunAmmo_2;
         private System.Windows.Forms.Button SniperAmmo;
         private System.Windows.Forms.Button SniperAmmo_2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer Timer;
+        private System.Windows.Forms.Label TimeElapsed;
+        private System.Windows.Forms.Label TrialsCounter;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -24,7 +24,7 @@ namespace Tests
 
             for (int i = 0; i < 100; ++i)
             {
-                if (positions[0].X.Equals(randomizedPositions[0].X))
+                if (positions[0].X.Equals(randomizedPositions.Result[0].X))
                 {
                     ++failedTestsCount;
                     if (failedTestsCount > 90)
@@ -49,7 +49,7 @@ namespace Tests
             
             for (int i = 0; i < 100; ++i)
             {
-                if (positions[0].Y.Equals(randomizedPositions[0].Y))
+                if (positions[0].Y.Equals(randomizedPositions.Result[0].Y))
                 {
                     ++failedTestsCount;
                     if(failedTestsCount > 90)
@@ -72,16 +72,19 @@ namespace Tests
             return positions;
         }
 
-        private CardPositions[] InitializeSamplePositions(bool randomized)
+        private async Task<CardPositions[]> InitializeSamplePositions(bool randomized)
         {
-            randomizedPositions[0] = new CardPositions(1, 5, 0);
-            randomizedPositions[1] = new CardPositions(2, 10, 1);
+            return await Task.Run(async () =>
+            {
+                randomizedPositions[0] = new CardPositions(1, 5, 0);
+                randomizedPositions[1] = new CardPositions(2, 10, 1);
 
-            var randomize = new RandomizePositions(2, randomizedPositions);
+                var randomize = new RandomizePositions(2, randomizedPositions);
 
-            var result = randomize.ReturnNewPositions();
+                var result = randomize.ReturnNewPositions().Result;
 
-            return result;
+                return result;
+            });
         }
     }
 }

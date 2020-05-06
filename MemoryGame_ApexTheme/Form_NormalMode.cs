@@ -14,6 +14,7 @@ namespace MemoryGame_ApexTheme
     {
         Match CheckForMatches = new Match();
         GetFormInfo formInfo;
+        long secondsElapsed;
 
         public Form_NormalMode()
         {
@@ -24,6 +25,7 @@ namespace MemoryGame_ApexTheme
         {
             formInfo = new GetFormInfo(this);
             formInfo.Shuffle();
+            secondsElapsed = Convert.ToInt64(TimeElapsed.Text);
         }
 
 
@@ -245,5 +247,11 @@ namespace MemoryGame_ApexTheme
         }
 
         #endregion
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            GetFormInfo.Timer(ref secondsElapsed, TimeElapsed, this);
+            TrialsCounter.Text = CheckForMatches.GetTrialsCount().ToString();
+        }
     }
 }

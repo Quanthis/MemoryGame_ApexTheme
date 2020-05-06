@@ -11,6 +11,8 @@ namespace MemoryGame_ApexTheme
     {
         Match CheckForMatches = new Match();
         GetFormInfo formInfo;
+        long secondsElapsed;
+
 
         public Form_EasyMode()
         {
@@ -21,8 +23,9 @@ namespace MemoryGame_ApexTheme
         {
             formInfo = new GetFormInfo(this);
             formInfo.Shuffle();
+            long secondsElapsed = Convert.ToInt64(TimeElapsed.Text);
         }
-        
+
 
         #region Buttons
         private void Banglore_1_Click(object sender, EventArgs e)
@@ -98,5 +101,11 @@ namespace MemoryGame_ApexTheme
         }
 
         #endregion
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            GetFormInfo.Timer(ref secondsElapsed, TimeElapsed, this);
+            TrialsCounter.Text = CheckForMatches.GetTrialsCount().ToString();
+        }
     }
 }

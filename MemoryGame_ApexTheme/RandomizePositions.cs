@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,94 +19,132 @@ namespace MemoryGame_ApexTheme
             finalPosition = new CardPositions[buttonsNumber];
         }
 
-        public CardPositions[] ReturnNewPositions()
+        public async Task<CardPositions[]> ReturnNewPositions()
         {
-            GetNewPositions();
-            return finalPosition;
+            return await Task.Run(async () =>
+            {
+                await GetNewPositions();
+                return finalPosition;
+            });
         }
 
-        private void GetNewPositions()
+        private async Task GetNewPositions()
         {
-            Random r = new Random();
-
-            int[] indexes = new int[buttonsNumber];
-
-            for(uint i = 0; i < buttonsNumber; ++i)
+            await Task.Run(() =>
             {
-                indexes[i] = cardPositions[i].GetIndex();                           //getting array of card positions indexes
-            }
+                Random r = new Random();
 
-            // Okay, now I think I will just create new objects CardPositions and return it, instead of modyfing existing array
+                int[] indexes = new int[buttonsNumber];
 
-            int[] newIndexes = new int[buttonsNumber];
-
-            for(uint i = 0; i < buttonsNumber ; ++i)
-            {
-                newIndexes[i] = r.Next(indexes.Min(), indexes.Max());
-            }
-
-            CardPositions[] shuffled = new CardPositions[buttonsNumber];
-            for (uint i = 0; i < buttonsNumber; ++i)
-            {
-                shuffled[i] = new CardPositions(cardPositions[i].X, cardPositions[i].Y, newIndexes[i]);
-            }
-
-            #region NotWorkingLoop
-            /*foreach (var position in cardPositions)
-            {
-                int i = 0;
-                int outerIteration = 0;
-
-                Debug.WriteLine(position.GetIndex());
-
-                while (cardPositions[outerIteration].GetIndex() != shuffled[outerIteration].GetIndex())
+                for (uint i = 0; i < buttonsNumber; ++i)
                 {
-                    Debug.WriteLine("Checked item: " + cardPositions[i].GetIndex() + " 2nd checked: " + shuffled[i].GetIndex());
-
-
-                    if (cardPositions[i].GetIndex() == shuffled[i].GetIndex())
-                    {
-                        Debug.WriteLine("Changing  position: " + cardPositions[i].GetIndex() + " to: " + shuffled[i].GetIndex());
-
-                        finalPosition[i] = shuffled[i];
-
-                        Debug.WriteLine("Changed  position: " + finalPosition[i].GetIndex() + " to: " + shuffled[i].GetIndex());
-                        break;
-                    }
-
-                    
-                    if(i == cardPositions.Length - 1)
-                    {
-                        Debug.WriteLine("Not found.");
-
-                        finalPosition[i] = cardPositions[i];
-
-                        break;
-                    }
-
-                    ++i;
+                    indexes[i] = cardPositions[i].GetIndex();                           //getting array of card positions indexes
                 }
 
-                ++outerIteration;
-            }
+                // Okay, now I think I will just create new objects CardPositions and return it, instead of modyfing existing array
 
-            Debug.WriteLine(finalPosition[0] + " sample ");
-            */
+                int[] newIndexes = new int[buttonsNumber];
+                List<int> list = indexes.ToList();
+                int iter = 0;
 
-            #endregion
-
-            int succesIteration = 0;
-            foreach (var position in cardPositions)
-            {
-                foreach(var pos in shuffled)
+                foreach (int i in UniqueRandom(list.Min(), list.Max(), list))
                 {
-                    if(position.GetIndex() == pos.GetIndex())
+                    newIndexes[iter] = i;
+                    ++iter;
+                    Debug.WriteLine("Iteration: " + iter + " random: " + i);
+                }
+
+                /*for (uint i = 0; i < buttonsNumber; ++i)
+                {
+                    //newIndexes[i] = r.Next(indexes.Min(), indexes.Max());
+                    int newIndex = r.Next(list.Min(), list.Max());
+                    Debug.WriteLine("New index: " + newIndex);
+                    newIndexes[i] = newIndex;
+                    list.RemoveAt(newIndex);
+                    list.TrimExcess();
+                }*/
+
+
+                /*int iteration = 0;
+                while((newIndexes[iteration] == 0 || newIndexes[iteration] == null) && iteration < indexes.Length )
+                {
+                    newIndexes[iteration] = r.Next(indexes.Min(), indexes.Max());
+                    ++iteration;
+                }*/
+
+                CardPositions[] shuffled = new CardPositions[buttonsNumber];
+                for (uint i = 0; i < buttonsNumber; ++i)
+                {
+                    shuffled[i] = new CardPositions(cardPositions[i].X, cardPositions[i].Y, newIndexes[i]);
+                }
+
+                #region NotWorkingLoop
+                /*foreach (var position in cardPositions)
+                {
+                    int i = 0;
+                    int outerIteration = 0;
+
+                    Debug.WriteLine(position.GetIndex());
+
+                    while (cardPositions[outerIteration].GetIndex() != shuffled[outerIteration].GetIndex())
                     {
-                        finalPosition[succesIteration] = pos;
-                        Debug.WriteLine("Succeded iteration: " + finalPosition[succesIteration]);
-                        ++succesIteration;
+                        Debug.WriteLine("Checked item: " + cardPositions[i].GetIndex() + " 2nd checked: " + shuffled[i].GetIndex());
+
+
+                        if (cardPositions[i].GetIndex() == shuffled[i].GetIndex())
+                        {
+                            Debug.WriteLine("Changing  position: " + cardPositions[i].GetIndex() + " to: " + shuffled[i].GetIndex());
+
+                            finalPosition[i] = shuffled[i];
+
+                            Debug.WriteLine("Changed  position: " + finalPosition[i].GetIndex() + " to: " + shuffled[i].GetIndex());
+                            break;
+                        }
+
+
+                        if(i == cardPositions.Length - 1)
+                        {
+                            Debug.WriteLine("Not found.");
+
+                            finalPosition[i] = cardPositions[i];
+
+                            break;
+                        }
+
+                        ++i;
+                    }
+
+                    ++outerIteration;
+                }
+
+                Debug.WriteLine(finalPosition[0] + " sample ");
+                */
+
+                #endregion
+
+                int succesIteration = 0;
+                foreach (var position in cardPositions)
+                {
+                    foreach (var pos in shuffled)
+                    {
+                        if (position.GetIndex() == pos.GetIndex())
+                        {
+                            finalPosition[succesIteration] = pos;
+                            ++succesIteration;
+                        }
                     }
                 }
+            });
+        }
+
+        private IEnumerable<int> UniqueRandom(int min, int max, List<int> list)
+        {
+            Random rnd = new Random();
+            while (list.Count > 0)
+            {
+                int index = rnd.Next(list.Count);
+                yield return list[index];
+                list.RemoveAt(index);
             }
         }
     }

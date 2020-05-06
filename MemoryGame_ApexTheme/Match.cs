@@ -10,9 +10,12 @@ namespace MemoryGame_ApexTheme
     {
         private Button firstButtonPressed;
         private Button secondButtonPressed;
+        private int trialsCount;
 
-
-        public Match() { }
+        public Match()
+        {
+            trialsCount = 0;
+        }
 
         public void NullButtons()
         {
@@ -57,11 +60,13 @@ namespace MemoryGame_ApexTheme
                     if (firstButtonPressed.Text == secondButtonPressed.Text)
                     {
                         DisposeButtons();
+                        ++trialsCount;
                         return true;
                     }
                     else
                     {
                         NullButtons();
+                        ++trialsCount;
                         return false;
                     }
                 }
@@ -83,6 +88,11 @@ namespace MemoryGame_ApexTheme
 
             firstButtonPressed = null;
             secondButtonPressed = null;
+        }
+
+        public int GetTrialsCount()
+        {
+            return trialsCount;
         }
     }
 }

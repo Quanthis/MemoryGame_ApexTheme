@@ -73,7 +73,7 @@
             this.Backpack_Images = new System.Windows.Forms.ImageList(this.components);
             this.SniperAmmo_Images = new System.Windows.Forms.ImageList(this.components);
             this.Backpack = new System.Windows.Forms.Button();
-            this.Bacppack_2 = new System.Windows.Forms.Button();
+            this.Backpack_2 = new System.Windows.Forms.Button();
             this.EnergyAmmo = new System.Windows.Forms.Button();
             this.EnergyAmmo_2 = new System.Windows.Forms.Button();
             this.HeavyAmmo = new System.Windows.Forms.Button();
@@ -119,6 +119,7 @@
             this.Banglore_2.TabIndex = 1;
             this.Banglore_2.Text = "Banglore";
             this.Banglore_2.UseVisualStyleBackColor = false;
+            this.Banglore_2.Click += new System.EventHandler(this.Banglore_2_Click);
             // 
             // Bloodhound_Images
             // 
@@ -209,6 +210,7 @@
             this.Bloodhound.TabIndex = 2;
             this.Bloodhound.Text = "Bloodhound";
             this.Bloodhound.UseVisualStyleBackColor = false;
+            this.Bloodhound.Click += new System.EventHandler(this.Bloodhound_Click);
             // 
             // Bloodhound_2
             // 
@@ -222,6 +224,7 @@
             this.Bloodhound_2.TabIndex = 3;
             this.Bloodhound_2.Text = "Bloodhound";
             this.Bloodhound_2.UseVisualStyleBackColor = false;
+            this.Bloodhound_2.Click += new System.EventHandler(this.Bloodhound_2_Click);
             // 
             // Caustic
             // 
@@ -235,6 +238,7 @@
             this.Caustic.TabIndex = 4;
             this.Caustic.Text = "Caustic";
             this.Caustic.UseVisualStyleBackColor = false;
+            this.Caustic.Click += new System.EventHandler(this.Caustic_Click);
             // 
             // Caustic_2
             // 
@@ -248,6 +252,7 @@
             this.Caustic_2.TabIndex = 5;
             this.Caustic_2.Text = "Caustic";
             this.Caustic_2.UseVisualStyleBackColor = false;
+            this.Caustic_2.Click += new System.EventHandler(this.Caustic_2_Click);
             // 
             // Crypto
             // 
@@ -261,6 +266,7 @@
             this.Crypto.TabIndex = 6;
             this.Crypto.Text = "Crypto";
             this.Crypto.UseVisualStyleBackColor = false;
+            this.Crypto.Click += new System.EventHandler(this.Crypto_Click);
             // 
             // Crypto_2
             // 
@@ -274,6 +280,7 @@
             this.Crypto_2.TabIndex = 7;
             this.Crypto_2.Text = "Crypto";
             this.Crypto_2.UseVisualStyleBackColor = false;
+            this.Crypto_2.Click += new System.EventHandler(this.Crypto_2_Click);
             // 
             // Gibraltar
             // 
@@ -287,6 +294,7 @@
             this.Gibraltar.TabIndex = 8;
             this.Gibraltar.Text = "Gibraltar";
             this.Gibraltar.UseVisualStyleBackColor = false;
+            this.Gibraltar.Click += new System.EventHandler(this.Gibraltar_Click);
             // 
             // Gibraltar_2
             // 
@@ -300,6 +308,7 @@
             this.Gibraltar_2.TabIndex = 9;
             this.Gibraltar_2.Text = "Gibraltar";
             this.Gibraltar_2.UseVisualStyleBackColor = false;
+            this.Gibraltar_2.Click += new System.EventHandler(this.Gibraltar_2_Click);
             // 
             // Lifeline
             // 
@@ -313,6 +322,7 @@
             this.Lifeline.TabIndex = 10;
             this.Lifeline.Text = "Lifeline";
             this.Lifeline.UseVisualStyleBackColor = false;
+            this.Lifeline.Click += new System.EventHandler(this.Lifeline_Click);
             // 
             // Lifeline_2
             // 
@@ -326,6 +336,7 @@
             this.Lifeline_2.TabIndex = 11;
             this.Lifeline_2.Text = "Lifeline";
             this.Lifeline_2.UseVisualStyleBackColor = false;
+            this.Lifeline_2.Click += new System.EventHandler(this.Lifeline_2_Click);
             // 
             // Mirage
             // 
@@ -339,6 +350,7 @@
             this.Mirage.TabIndex = 12;
             this.Mirage.Text = "Mirage";
             this.Mirage.UseVisualStyleBackColor = false;
+            this.Mirage.Click += new System.EventHandler(this.Mirage_Click);
             // 
             // Mirage_2
             // 
@@ -352,6 +364,7 @@
             this.Mirage_2.TabIndex = 13;
             this.Mirage_2.Text = "Mirage";
             this.Mirage_2.UseVisualStyleBackColor = false;
+            this.Mirage_2.Click += new System.EventHandler(this.Mirage_2_Click);
             // 
             // Octane
             // 
@@ -365,6 +378,7 @@
             this.Octane.TabIndex = 14;
             this.Octane.Text = "Octane";
             this.Octane.UseVisualStyleBackColor = false;
+            this.Octane.Click += new System.EventHandler(this.Octane_Click);
             // 
             // Octane_2
             // 
@@ -378,6 +392,7 @@
             this.Octane_2.TabIndex = 15;
             this.Octane_2.Text = "Octane";
             this.Octane_2.UseVisualStyleBackColor = false;
+            this.Octane_2.Click += new System.EventHandler(this.Octane_2_Click);
             // 
             // Pathfinder
             // 
@@ -391,6 +406,7 @@
             this.Pathfinder.TabIndex = 16;
             this.Pathfinder.Text = "Pathfinder";
             this.Pathfinder.UseVisualStyleBackColor = false;
+            this.Pathfinder.Click += new System.EventHandler(this.Pathfinder_Click);
             // 
             // Pathfinder_2
             // 
@@ -404,6 +420,7 @@
             this.Pathfinder_2.TabIndex = 17;
             this.Pathfinder_2.Text = "Pathfinder";
             this.Pathfinder_2.UseVisualStyleBackColor = false;
+            this.Pathfinder_2.Click += new System.EventHandler(this.Pathfinder_2_Click);
             // 
             // Revenant
             // 
@@ -417,6 +434,7 @@
             this.Revenant.TabIndex = 18;
             this.Revenant.Text = "Revenant";
             this.Revenant.UseVisualStyleBackColor = false;
+            this.Revenant.Click += new System.EventHandler(this.Revenant_Click);
             // 
             // Revenant_2
             // 
@@ -430,6 +448,7 @@
             this.Revenant_2.TabIndex = 19;
             this.Revenant_2.Text = "Revenant";
             this.Revenant_2.UseVisualStyleBackColor = false;
+            this.Revenant_2.Click += new System.EventHandler(this.Revenant_2_Click);
             // 
             // Wattson
             // 
@@ -443,6 +462,7 @@
             this.Wattson.TabIndex = 20;
             this.Wattson.Text = "Wattson";
             this.Wattson.UseVisualStyleBackColor = false;
+            this.Wattson.Click += new System.EventHandler(this.Wattson_Click);
             // 
             // Wattson_2
             // 
@@ -456,6 +476,7 @@
             this.Wattson_2.TabIndex = 21;
             this.Wattson_2.Text = "Wattson";
             this.Wattson_2.UseVisualStyleBackColor = false;
+            this.Wattson_2.Click += new System.EventHandler(this.Wattson_2_Click);
             // 
             // Wraith
             // 
@@ -469,6 +490,7 @@
             this.Wraith.TabIndex = 22;
             this.Wraith.Text = "Wraith";
             this.Wraith.UseVisualStyleBackColor = false;
+            this.Wraith.Click += new System.EventHandler(this.Wraith_Click);
             // 
             // Wraith_2
             // 
@@ -482,6 +504,7 @@
             this.Wraith_2.TabIndex = 23;
             this.Wraith_2.Text = "Wraith";
             this.Wraith_2.UseVisualStyleBackColor = false;
+            this.Wraith_2.Click += new System.EventHandler(this.Wraith_2_Click);
             // 
             // HeavyAmmo_Images
             // 
@@ -537,19 +560,21 @@
             this.Backpack.TabIndex = 24;
             this.Backpack.Text = "Backpack";
             this.Backpack.UseVisualStyleBackColor = false;
+            this.Backpack.Click += new System.EventHandler(this.Backpack_Click);
             // 
-            // Bacppack_2
+            // Backpack_2
             // 
-            this.Bacppack_2.BackColor = System.Drawing.Color.Black;
-            this.Bacppack_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
-            this.Bacppack_2.ImageIndex = 1;
-            this.Bacppack_2.ImageList = this.Backpack_Images;
-            this.Bacppack_2.Location = new System.Drawing.Point(387, 527);
-            this.Bacppack_2.Name = "Bacppack_2";
-            this.Bacppack_2.Size = new System.Drawing.Size(79, 140);
-            this.Bacppack_2.TabIndex = 25;
-            this.Bacppack_2.Text = "Backpack";
-            this.Bacppack_2.UseVisualStyleBackColor = false;
+            this.Backpack_2.BackColor = System.Drawing.Color.Black;
+            this.Backpack_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Backpack_2.ImageIndex = 1;
+            this.Backpack_2.ImageList = this.Backpack_Images;
+            this.Backpack_2.Location = new System.Drawing.Point(387, 527);
+            this.Backpack_2.Name = "Backpack_2";
+            this.Backpack_2.Size = new System.Drawing.Size(79, 140);
+            this.Backpack_2.TabIndex = 25;
+            this.Backpack_2.Text = "Backpack";
+            this.Backpack_2.UseVisualStyleBackColor = false;
+            this.Backpack_2.Click += new System.EventHandler(this.Bacppack_2_Click);
             // 
             // EnergyAmmo
             // 
@@ -563,6 +588,7 @@
             this.EnergyAmmo.TabIndex = 26;
             this.EnergyAmmo.Text = "EnergyAmmo";
             this.EnergyAmmo.UseVisualStyleBackColor = false;
+            this.EnergyAmmo.Click += new System.EventHandler(this.EnergyAmmo_Click);
             // 
             // EnergyAmmo_2
             // 
@@ -576,6 +602,7 @@
             this.EnergyAmmo_2.TabIndex = 27;
             this.EnergyAmmo_2.Text = "EnergyAmmo";
             this.EnergyAmmo_2.UseVisualStyleBackColor = false;
+            this.EnergyAmmo_2.Click += new System.EventHandler(this.EnergyAmmo_2_Click);
             // 
             // HeavyAmmo
             // 
@@ -589,6 +616,7 @@
             this.HeavyAmmo.TabIndex = 28;
             this.HeavyAmmo.Text = "HeavyAmmo";
             this.HeavyAmmo.UseVisualStyleBackColor = false;
+            this.HeavyAmmo.Click += new System.EventHandler(this.HeavyAmmo_Click);
             // 
             // HeavyAmmo_2
             // 
@@ -602,6 +630,7 @@
             this.HeavyAmmo_2.TabIndex = 29;
             this.HeavyAmmo_2.Text = "HeavyAmmo";
             this.HeavyAmmo_2.UseVisualStyleBackColor = false;
+            this.HeavyAmmo_2.Click += new System.EventHandler(this.HeavyAmmo_2_Click);
             // 
             // LightAmmo
             // 
@@ -615,6 +644,7 @@
             this.LightAmmo.TabIndex = 30;
             this.LightAmmo.Text = "LightAmmo";
             this.LightAmmo.UseVisualStyleBackColor = false;
+            this.LightAmmo.Click += new System.EventHandler(this.LightAmmo_Click);
             // 
             // LightAmmo_2
             // 
@@ -628,6 +658,7 @@
             this.LightAmmo_2.TabIndex = 31;
             this.LightAmmo_2.Text = "LightAmmo";
             this.LightAmmo_2.UseVisualStyleBackColor = false;
+            this.LightAmmo_2.Click += new System.EventHandler(this.LightAmmo_2_Click);
             // 
             // ShotgunAmmo
             // 
@@ -641,6 +672,7 @@
             this.ShotgunAmmo.TabIndex = 32;
             this.ShotgunAmmo.Text = "ShotgunAmmo";
             this.ShotgunAmmo.UseVisualStyleBackColor = false;
+            this.ShotgunAmmo.Click += new System.EventHandler(this.ShotgunAmmo_Click);
             // 
             // ShotgunAmmo_2
             // 
@@ -654,6 +686,7 @@
             this.ShotgunAmmo_2.TabIndex = 33;
             this.ShotgunAmmo_2.Text = "ShotgunAmmo";
             this.ShotgunAmmo_2.UseVisualStyleBackColor = false;
+            this.ShotgunAmmo_2.Click += new System.EventHandler(this.ShotgunAmmo_2_Click);
             // 
             // SniperAmmo
             // 
@@ -667,6 +700,7 @@
             this.SniperAmmo.TabIndex = 34;
             this.SniperAmmo.Text = "SniperAmmo";
             this.SniperAmmo.UseVisualStyleBackColor = false;
+            this.SniperAmmo.Click += new System.EventHandler(this.SniperAmmo_Click);
             // 
             // SniperAmmo_2
             // 
@@ -680,6 +714,7 @@
             this.SniperAmmo_2.TabIndex = 35;
             this.SniperAmmo_2.Text = "button1";
             this.SniperAmmo_2.UseVisualStyleBackColor = false;
+            this.SniperAmmo_2.Click += new System.EventHandler(this.SniperAmmo_2_Click);
             // 
             // Form_NormalMode
             // 
@@ -697,7 +732,7 @@
             this.Controls.Add(this.HeavyAmmo);
             this.Controls.Add(this.EnergyAmmo_2);
             this.Controls.Add(this.EnergyAmmo);
-            this.Controls.Add(this.Bacppack_2);
+            this.Controls.Add(this.Backpack_2);
             this.Controls.Add(this.Backpack);
             this.Controls.Add(this.Wraith_2);
             this.Controls.Add(this.Wraith);
@@ -775,7 +810,7 @@
         private System.Windows.Forms.ImageList Backpack_Images;
         private System.Windows.Forms.ImageList SniperAmmo_Images;
         private System.Windows.Forms.Button Backpack;
-        private System.Windows.Forms.Button Bacppack_2;
+        private System.Windows.Forms.Button Backpack_2;
         private System.Windows.Forms.Button EnergyAmmo;
         private System.Windows.Forms.Button EnergyAmmo_2;
         private System.Windows.Forms.Button HeavyAmmo;

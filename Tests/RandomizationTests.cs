@@ -32,6 +32,10 @@ namespace Tests
                         Assert.Fail();
                     }
                 }
+                else
+                {
+                    break;
+                }
             }
         }
 
@@ -52,6 +56,10 @@ namespace Tests
                     {
                         Assert.Fail();
                     }
+                }
+                else
+                {
+                    break;
                 }
             }
         }

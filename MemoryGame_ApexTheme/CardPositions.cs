@@ -24,11 +24,19 @@ namespace MemoryGame_ApexTheme
             X = posX;
             Y = posY;
             index = newIndex;
+            Interlocked.Increment(ref globalIndex);
         }
 
         public CardPositions()
         {
             index = Interlocked.Increment(ref globalIndex);
+        }
+
+        public CardPositions(CardPositions cardPositions)
+        {
+            X = cardPositions.X;
+            Y = cardPositions.Y;
+            index = cardPositions.GetIndex();
         }
 
         public int GetIndex()
@@ -40,6 +48,12 @@ namespace MemoryGame_ApexTheme
         {
             X = posX;
             Y = posY;
+        }
+
+        public override string ToString()
+        {
+            string result = X + "" + Y + "" + index;
+            return result;
         }
     }
 }

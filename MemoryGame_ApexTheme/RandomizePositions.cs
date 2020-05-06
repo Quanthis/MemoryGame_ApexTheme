@@ -7,18 +7,25 @@ namespace MemoryGame_ApexTheme
 {
     public class RandomizePositions : NewPositions
     {
-        uint buttonsNumber;
-        CardPositions[] cardPositions;
+        private uint buttonsNumber;
+        private CardPositions[] cardPositions;
+        private CardPositions[] finalPosition;
 
         public RandomizePositions(uint howManyNewPositions, CardPositions[] currentPositions)
         {
             buttonsNumber = howManyNewPositions;
             cardPositions = currentPositions;
+            finalPosition = new CardPositions[buttonsNumber];
         }
 
         public CardPositions[] ReturnNewPositions()
         {
-            CardPositions[] shuffledIndexes = new CardPositions[buttonsNumber];
+            GetNewPositions();
+            return finalPosition;
+        }
+
+        private void GetNewPositions()
+        {
             Random r = new Random();
 
             int[] indexes = new int[buttonsNumber];
@@ -26,7 +33,6 @@ namespace MemoryGame_ApexTheme
             for(uint i = 0; i < buttonsNumber; ++i)
             {
                 indexes[i] = cardPositions[i].GetIndex();                           //getting array of card positions indexes
-                //Debug.WriteLine(indexes[i]);
             }
 
             // Okay, now I think I will just create new objects CardPositions and return it, instead of modyfing existing array
@@ -36,22 +42,71 @@ namespace MemoryGame_ApexTheme
             for(uint i = 0; i < buttonsNumber ; ++i)
             {
                 newIndexes[i] = r.Next(indexes.Min(), indexes.Max());
-                //Debug.WriteLine("New index: " + newIndexes[i]);
-            }
-
-            for (uint i = 0; i <buttonsNumber; ++i)
-            {
-                shuffledIndexes[i] = new CardPositions(cardPositions[i].X, cardPositions[i].Y, newIndexes[i]);
             }
 
             CardPositions[] shuffled = new CardPositions[buttonsNumber];
             for (uint i = 0; i < buttonsNumber; ++i)
             {
-                shuffled[i] = new CardPositions(shuffledIndexes[i].X, shuffledIndexes[i].Y, shuffledIndexes[i].GetIndex());
-                Debug.WriteLine("Shuffled values: X: " + shuffled[i].X + " Y: " + shuffled[i].Y + " index: " + shuffled[i].GetIndex());
+                shuffled[i] = new CardPositions(cardPositions[i].X, cardPositions[i].Y, newIndexes[i]);
             }
 
-            return shuffled;
+            #region NotWorkingLoop
+            /*foreach (var position in cardPositions)
+            {
+                int i = 0;
+                int outerIteration = 0;
+
+                Debug.WriteLine(position.GetIndex());
+
+                while (cardPositions[outerIteration].GetIndex() != shuffled[outerIteration].GetIndex())
+                {
+                    Debug.WriteLine("Checked item: " + cardPositions[i].GetIndex() + " 2nd checked: " + shuffled[i].GetIndex());
+
+
+                    if (cardPositions[i].GetIndex() == shuffled[i].GetIndex())
+                    {
+                        Debug.WriteLine("Changing  position: " + cardPositions[i].GetIndex() + " to: " + shuffled[i].GetIndex());
+
+                        finalPosition[i] = shuffled[i];
+
+                        Debug.WriteLine("Changed  position: " + finalPosition[i].GetIndex() + " to: " + shuffled[i].GetIndex());
+                        break;
+                    }
+
+                    
+                    if(i == cardPositions.Length - 1)
+                    {
+                        Debug.WriteLine("Not found.");
+
+                        finalPosition[i] = cardPositions[i];
+
+                        break;
+                    }
+
+                    ++i;
+                }
+
+                ++outerIteration;
+            }
+
+            Debug.WriteLine(finalPosition[0] + " sample ");
+            */
+
+            #endregion
+
+            int succesIteration = 0;
+            foreach (var position in cardPositions)
+            {
+                foreach(var pos in shuffled)
+                {
+                    if(position.GetIndex() == pos.GetIndex())
+                    {
+                        finalPosition[succesIteration] = pos;
+                        Debug.WriteLine("Succeded iteration: " + finalPosition[succesIteration]);
+                        ++succesIteration;
+                    }
+                }
+            }
         }
     }
 }

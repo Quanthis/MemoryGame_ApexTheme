@@ -44,6 +44,46 @@
             this.Octane_Images = new System.Windows.Forms.ImageList(this.components);
             this.Revenant_Images = new System.Windows.Forms.ImageList(this.components);
             this.Wattson_Images = new System.Windows.Forms.ImageList(this.components);
+            this.Bloodhound = new System.Windows.Forms.Button();
+            this.Bloodhound_2 = new System.Windows.Forms.Button();
+            this.Caustic = new System.Windows.Forms.Button();
+            this.Caustic_2 = new System.Windows.Forms.Button();
+            this.Crypto = new System.Windows.Forms.Button();
+            this.Crypto_2 = new System.Windows.Forms.Button();
+            this.Gibraltar = new System.Windows.Forms.Button();
+            this.Gibraltar_2 = new System.Windows.Forms.Button();
+            this.Lifeline = new System.Windows.Forms.Button();
+            this.Lifeline_2 = new System.Windows.Forms.Button();
+            this.Mirage = new System.Windows.Forms.Button();
+            this.Mirage_2 = new System.Windows.Forms.Button();
+            this.Octane = new System.Windows.Forms.Button();
+            this.Octane_2 = new System.Windows.Forms.Button();
+            this.Pathfinder = new System.Windows.Forms.Button();
+            this.Pathfinder_2 = new System.Windows.Forms.Button();
+            this.Revenant = new System.Windows.Forms.Button();
+            this.Revenant_2 = new System.Windows.Forms.Button();
+            this.Wattson = new System.Windows.Forms.Button();
+            this.Wattson_2 = new System.Windows.Forms.Button();
+            this.Wraith = new System.Windows.Forms.Button();
+            this.Wraith_2 = new System.Windows.Forms.Button();
+            this.HeavyAmmo_Images = new System.Windows.Forms.ImageList(this.components);
+            this.LightAmmo_Images = new System.Windows.Forms.ImageList(this.components);
+            this.EnergyAmmo_Images = new System.Windows.Forms.ImageList(this.components);
+            this.ShotgunAmmo_Images = new System.Windows.Forms.ImageList(this.components);
+            this.Backpack_Images = new System.Windows.Forms.ImageList(this.components);
+            this.SniperAmmo_Images = new System.Windows.Forms.ImageList(this.components);
+            this.Backpack = new System.Windows.Forms.Button();
+            this.Bacppack_2 = new System.Windows.Forms.Button();
+            this.EnergyAmmo = new System.Windows.Forms.Button();
+            this.EnergyAmmo_2 = new System.Windows.Forms.Button();
+            this.HeavyAmmo = new System.Windows.Forms.Button();
+            this.HeavyAmmo_2 = new System.Windows.Forms.Button();
+            this.LightAmmo = new System.Windows.Forms.Button();
+            this.LightAmmo_2 = new System.Windows.Forms.Button();
+            this.ShotgunAmmo = new System.Windows.Forms.Button();
+            this.ShotgunAmmo_2 = new System.Windows.Forms.Button();
+            this.SniperAmmo = new System.Windows.Forms.Button();
+            this.SniperAmmo_2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Banglore
@@ -156,12 +196,530 @@
             this.Wattson_Images.Images.SetKeyName(0, "Wattson.png");
             this.Wattson_Images.Images.SetKeyName(1, "Covered_Card.PNG");
             // 
+            // Bloodhound
+            // 
+            this.Bloodhound.BackColor = System.Drawing.Color.Black;
+            this.Bloodhound.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Bloodhound.ImageIndex = 1;
+            this.Bloodhound.ImageList = this.Bloodhound_Images;
+            this.Bloodhound.Location = new System.Drawing.Point(147, 26);
+            this.Bloodhound.Name = "Bloodhound";
+            this.Bloodhound.Size = new System.Drawing.Size(79, 140);
+            this.Bloodhound.TabIndex = 2;
+            this.Bloodhound.Text = "Bloodhound";
+            this.Bloodhound.UseVisualStyleBackColor = false;
+            // 
+            // Bloodhound_2
+            // 
+            this.Bloodhound_2.BackColor = System.Drawing.Color.Black;
+            this.Bloodhound_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Bloodhound_2.ImageIndex = 1;
+            this.Bloodhound_2.ImageList = this.Bloodhound_Images;
+            this.Bloodhound_2.Location = new System.Drawing.Point(147, 193);
+            this.Bloodhound_2.Name = "Bloodhound_2";
+            this.Bloodhound_2.Size = new System.Drawing.Size(79, 140);
+            this.Bloodhound_2.TabIndex = 3;
+            this.Bloodhound_2.Text = "Bloodhound";
+            this.Bloodhound_2.UseVisualStyleBackColor = false;
+            // 
+            // Caustic
+            // 
+            this.Caustic.BackColor = System.Drawing.Color.Black;
+            this.Caustic.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Caustic.ImageIndex = 1;
+            this.Caustic.ImageList = this.Caustic_Images;
+            this.Caustic.Location = new System.Drawing.Point(267, 26);
+            this.Caustic.Name = "Caustic";
+            this.Caustic.Size = new System.Drawing.Size(79, 140);
+            this.Caustic.TabIndex = 4;
+            this.Caustic.Text = "Caustic";
+            this.Caustic.UseVisualStyleBackColor = false;
+            // 
+            // Caustic_2
+            // 
+            this.Caustic_2.BackColor = System.Drawing.Color.Black;
+            this.Caustic_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Caustic_2.ImageIndex = 1;
+            this.Caustic_2.ImageList = this.Caustic_Images;
+            this.Caustic_2.Location = new System.Drawing.Point(267, 193);
+            this.Caustic_2.Name = "Caustic_2";
+            this.Caustic_2.Size = new System.Drawing.Size(79, 140);
+            this.Caustic_2.TabIndex = 5;
+            this.Caustic_2.Text = "Caustic";
+            this.Caustic_2.UseVisualStyleBackColor = false;
+            // 
+            // Crypto
+            // 
+            this.Crypto.BackColor = System.Drawing.Color.Black;
+            this.Crypto.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Crypto.ImageIndex = 1;
+            this.Crypto.ImageList = this.Crypto_Images;
+            this.Crypto.Location = new System.Drawing.Point(387, 26);
+            this.Crypto.Name = "Crypto";
+            this.Crypto.Size = new System.Drawing.Size(79, 140);
+            this.Crypto.TabIndex = 6;
+            this.Crypto.Text = "Crypto";
+            this.Crypto.UseVisualStyleBackColor = false;
+            // 
+            // Crypto_2
+            // 
+            this.Crypto_2.BackColor = System.Drawing.Color.Black;
+            this.Crypto_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Crypto_2.ImageIndex = 1;
+            this.Crypto_2.ImageList = this.Crypto_Images;
+            this.Crypto_2.Location = new System.Drawing.Point(387, 193);
+            this.Crypto_2.Name = "Crypto_2";
+            this.Crypto_2.Size = new System.Drawing.Size(79, 140);
+            this.Crypto_2.TabIndex = 7;
+            this.Crypto_2.Text = "Crypto";
+            this.Crypto_2.UseVisualStyleBackColor = false;
+            // 
+            // Gibraltar
+            // 
+            this.Gibraltar.BackColor = System.Drawing.Color.Black;
+            this.Gibraltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Gibraltar.ImageIndex = 1;
+            this.Gibraltar.ImageList = this.Gibraltar_Images;
+            this.Gibraltar.Location = new System.Drawing.Point(507, 26);
+            this.Gibraltar.Name = "Gibraltar";
+            this.Gibraltar.Size = new System.Drawing.Size(79, 140);
+            this.Gibraltar.TabIndex = 8;
+            this.Gibraltar.Text = "Gibraltar";
+            this.Gibraltar.UseVisualStyleBackColor = false;
+            // 
+            // Gibraltar_2
+            // 
+            this.Gibraltar_2.BackColor = System.Drawing.Color.Black;
+            this.Gibraltar_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Gibraltar_2.ImageIndex = 1;
+            this.Gibraltar_2.ImageList = this.Gibraltar_Images;
+            this.Gibraltar_2.Location = new System.Drawing.Point(507, 193);
+            this.Gibraltar_2.Name = "Gibraltar_2";
+            this.Gibraltar_2.Size = new System.Drawing.Size(79, 140);
+            this.Gibraltar_2.TabIndex = 9;
+            this.Gibraltar_2.Text = "Gibraltar";
+            this.Gibraltar_2.UseVisualStyleBackColor = false;
+            // 
+            // Lifeline
+            // 
+            this.Lifeline.BackColor = System.Drawing.Color.Black;
+            this.Lifeline.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Lifeline.ImageIndex = 1;
+            this.Lifeline.ImageList = this.Lifeline_Images;
+            this.Lifeline.Location = new System.Drawing.Point(627, 26);
+            this.Lifeline.Name = "Lifeline";
+            this.Lifeline.Size = new System.Drawing.Size(79, 140);
+            this.Lifeline.TabIndex = 10;
+            this.Lifeline.Text = "Lifeline";
+            this.Lifeline.UseVisualStyleBackColor = false;
+            // 
+            // Lifeline_2
+            // 
+            this.Lifeline_2.BackColor = System.Drawing.Color.Black;
+            this.Lifeline_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Lifeline_2.ImageIndex = 1;
+            this.Lifeline_2.ImageList = this.Lifeline_Images;
+            this.Lifeline_2.Location = new System.Drawing.Point(627, 193);
+            this.Lifeline_2.Name = "Lifeline_2";
+            this.Lifeline_2.Size = new System.Drawing.Size(79, 140);
+            this.Lifeline_2.TabIndex = 11;
+            this.Lifeline_2.Text = "Lifeline";
+            this.Lifeline_2.UseVisualStyleBackColor = false;
+            // 
+            // Mirage
+            // 
+            this.Mirage.BackColor = System.Drawing.Color.Black;
+            this.Mirage.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Mirage.ImageIndex = 1;
+            this.Mirage.ImageList = this.Mirage_Images;
+            this.Mirage.Location = new System.Drawing.Point(747, 26);
+            this.Mirage.Name = "Mirage";
+            this.Mirage.Size = new System.Drawing.Size(79, 140);
+            this.Mirage.TabIndex = 12;
+            this.Mirage.Text = "Mirage";
+            this.Mirage.UseVisualStyleBackColor = false;
+            // 
+            // Mirage_2
+            // 
+            this.Mirage_2.BackColor = System.Drawing.Color.Black;
+            this.Mirage_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Mirage_2.ImageIndex = 1;
+            this.Mirage_2.ImageList = this.Mirage_Images;
+            this.Mirage_2.Location = new System.Drawing.Point(747, 193);
+            this.Mirage_2.Name = "Mirage_2";
+            this.Mirage_2.Size = new System.Drawing.Size(79, 140);
+            this.Mirage_2.TabIndex = 13;
+            this.Mirage_2.Text = "Mirage";
+            this.Mirage_2.UseVisualStyleBackColor = false;
+            // 
+            // Octane
+            // 
+            this.Octane.BackColor = System.Drawing.Color.Black;
+            this.Octane.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Octane.ImageIndex = 1;
+            this.Octane.ImageList = this.Octane_Images;
+            this.Octane.Location = new System.Drawing.Point(867, 26);
+            this.Octane.Name = "Octane";
+            this.Octane.Size = new System.Drawing.Size(79, 140);
+            this.Octane.TabIndex = 14;
+            this.Octane.Text = "Octane";
+            this.Octane.UseVisualStyleBackColor = false;
+            // 
+            // Octane_2
+            // 
+            this.Octane_2.BackColor = System.Drawing.Color.Black;
+            this.Octane_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Octane_2.ImageIndex = 1;
+            this.Octane_2.ImageList = this.Octane_Images;
+            this.Octane_2.Location = new System.Drawing.Point(867, 193);
+            this.Octane_2.Name = "Octane_2";
+            this.Octane_2.Size = new System.Drawing.Size(79, 140);
+            this.Octane_2.TabIndex = 15;
+            this.Octane_2.Text = "Octane";
+            this.Octane_2.UseVisualStyleBackColor = false;
+            // 
+            // Pathfinder
+            // 
+            this.Pathfinder.BackColor = System.Drawing.Color.Black;
+            this.Pathfinder.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Pathfinder.ImageIndex = 1;
+            this.Pathfinder.ImageList = this.Pathfinder_Images;
+            this.Pathfinder.Location = new System.Drawing.Point(987, 26);
+            this.Pathfinder.Name = "Pathfinder";
+            this.Pathfinder.Size = new System.Drawing.Size(79, 140);
+            this.Pathfinder.TabIndex = 16;
+            this.Pathfinder.Text = "Pathfinder";
+            this.Pathfinder.UseVisualStyleBackColor = false;
+            // 
+            // Pathfinder_2
+            // 
+            this.Pathfinder_2.BackColor = System.Drawing.Color.Black;
+            this.Pathfinder_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Pathfinder_2.ImageIndex = 1;
+            this.Pathfinder_2.ImageList = this.Pathfinder_Images;
+            this.Pathfinder_2.Location = new System.Drawing.Point(987, 193);
+            this.Pathfinder_2.Name = "Pathfinder_2";
+            this.Pathfinder_2.Size = new System.Drawing.Size(79, 140);
+            this.Pathfinder_2.TabIndex = 17;
+            this.Pathfinder_2.Text = "Pathfinder";
+            this.Pathfinder_2.UseVisualStyleBackColor = false;
+            // 
+            // Revenant
+            // 
+            this.Revenant.BackColor = System.Drawing.Color.Black;
+            this.Revenant.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Revenant.ImageIndex = 1;
+            this.Revenant.ImageList = this.Revenant_Images;
+            this.Revenant.Location = new System.Drawing.Point(27, 360);
+            this.Revenant.Name = "Revenant";
+            this.Revenant.Size = new System.Drawing.Size(79, 140);
+            this.Revenant.TabIndex = 18;
+            this.Revenant.Text = "Revenant";
+            this.Revenant.UseVisualStyleBackColor = false;
+            // 
+            // Revenant_2
+            // 
+            this.Revenant_2.BackColor = System.Drawing.Color.Black;
+            this.Revenant_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Revenant_2.ImageIndex = 1;
+            this.Revenant_2.ImageList = this.Revenant_Images;
+            this.Revenant_2.Location = new System.Drawing.Point(27, 527);
+            this.Revenant_2.Name = "Revenant_2";
+            this.Revenant_2.Size = new System.Drawing.Size(79, 140);
+            this.Revenant_2.TabIndex = 19;
+            this.Revenant_2.Text = "Revenant";
+            this.Revenant_2.UseVisualStyleBackColor = false;
+            // 
+            // Wattson
+            // 
+            this.Wattson.BackColor = System.Drawing.Color.Black;
+            this.Wattson.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Wattson.ImageIndex = 1;
+            this.Wattson.ImageList = this.Wattson_Images;
+            this.Wattson.Location = new System.Drawing.Point(147, 360);
+            this.Wattson.Name = "Wattson";
+            this.Wattson.Size = new System.Drawing.Size(79, 140);
+            this.Wattson.TabIndex = 20;
+            this.Wattson.Text = "Wattson";
+            this.Wattson.UseVisualStyleBackColor = false;
+            // 
+            // Wattson_2
+            // 
+            this.Wattson_2.BackColor = System.Drawing.Color.Black;
+            this.Wattson_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Wattson_2.ImageIndex = 1;
+            this.Wattson_2.ImageList = this.Wattson_Images;
+            this.Wattson_2.Location = new System.Drawing.Point(147, 527);
+            this.Wattson_2.Name = "Wattson_2";
+            this.Wattson_2.Size = new System.Drawing.Size(79, 140);
+            this.Wattson_2.TabIndex = 21;
+            this.Wattson_2.Text = "Wattson";
+            this.Wattson_2.UseVisualStyleBackColor = false;
+            // 
+            // Wraith
+            // 
+            this.Wraith.BackColor = System.Drawing.Color.Black;
+            this.Wraith.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Wraith.ImageIndex = 1;
+            this.Wraith.ImageList = this.Wraith_Images;
+            this.Wraith.Location = new System.Drawing.Point(267, 360);
+            this.Wraith.Name = "Wraith";
+            this.Wraith.Size = new System.Drawing.Size(79, 140);
+            this.Wraith.TabIndex = 22;
+            this.Wraith.Text = "Wraith";
+            this.Wraith.UseVisualStyleBackColor = false;
+            // 
+            // Wraith_2
+            // 
+            this.Wraith_2.BackColor = System.Drawing.Color.Black;
+            this.Wraith_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Wraith_2.ImageIndex = 1;
+            this.Wraith_2.ImageList = this.Wraith_Images;
+            this.Wraith_2.Location = new System.Drawing.Point(267, 527);
+            this.Wraith_2.Name = "Wraith_2";
+            this.Wraith_2.Size = new System.Drawing.Size(79, 140);
+            this.Wraith_2.TabIndex = 23;
+            this.Wraith_2.Text = "Wraith";
+            this.Wraith_2.UseVisualStyleBackColor = false;
+            // 
+            // HeavyAmmo_Images
+            // 
+            this.HeavyAmmo_Images.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("HeavyAmmo_Images.ImageStream")));
+            this.HeavyAmmo_Images.TransparentColor = System.Drawing.Color.Transparent;
+            this.HeavyAmmo_Images.Images.SetKeyName(0, "HeavyAmmo.PNG");
+            this.HeavyAmmo_Images.Images.SetKeyName(1, "Covered_Card.PNG");
+            // 
+            // LightAmmo_Images
+            // 
+            this.LightAmmo_Images.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("LightAmmo_Images.ImageStream")));
+            this.LightAmmo_Images.TransparentColor = System.Drawing.Color.Transparent;
+            this.LightAmmo_Images.Images.SetKeyName(0, "Lifeline.png");
+            this.LightAmmo_Images.Images.SetKeyName(1, "Covered_Card.PNG");
+            // 
+            // EnergyAmmo_Images
+            // 
+            this.EnergyAmmo_Images.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("EnergyAmmo_Images.ImageStream")));
+            this.EnergyAmmo_Images.TransparentColor = System.Drawing.Color.Transparent;
+            this.EnergyAmmo_Images.Images.SetKeyName(0, "EnergyAmmo.png");
+            this.EnergyAmmo_Images.Images.SetKeyName(1, "Covered_Card.PNG");
+            // 
+            // ShotgunAmmo_Images
+            // 
+            this.ShotgunAmmo_Images.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ShotgunAmmo_Images.ImageStream")));
+            this.ShotgunAmmo_Images.TransparentColor = System.Drawing.Color.Transparent;
+            this.ShotgunAmmo_Images.Images.SetKeyName(0, "ShotgunAmmo.png");
+            this.ShotgunAmmo_Images.Images.SetKeyName(1, "Covered_Card.PNG");
+            // 
+            // Backpack_Images
+            // 
+            this.Backpack_Images.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("Backpack_Images.ImageStream")));
+            this.Backpack_Images.TransparentColor = System.Drawing.Color.Transparent;
+            this.Backpack_Images.Images.SetKeyName(0, "Backpack.png");
+            this.Backpack_Images.Images.SetKeyName(1, "Covered_Card.PNG");
+            // 
+            // SniperAmmo_Images
+            // 
+            this.SniperAmmo_Images.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("SniperAmmo_Images.ImageStream")));
+            this.SniperAmmo_Images.TransparentColor = System.Drawing.Color.Transparent;
+            this.SniperAmmo_Images.Images.SetKeyName(0, "SniperAmmo.png");
+            this.SniperAmmo_Images.Images.SetKeyName(1, "Covered_Card.PNG");
+            // 
+            // Backpack
+            // 
+            this.Backpack.BackColor = System.Drawing.Color.Black;
+            this.Backpack.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Backpack.ImageIndex = 1;
+            this.Backpack.ImageList = this.Backpack_Images;
+            this.Backpack.Location = new System.Drawing.Point(387, 360);
+            this.Backpack.Name = "Backpack";
+            this.Backpack.Size = new System.Drawing.Size(79, 140);
+            this.Backpack.TabIndex = 24;
+            this.Backpack.Text = "Backpack";
+            this.Backpack.UseVisualStyleBackColor = false;
+            // 
+            // Bacppack_2
+            // 
+            this.Bacppack_2.BackColor = System.Drawing.Color.Black;
+            this.Bacppack_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Bacppack_2.ImageIndex = 1;
+            this.Bacppack_2.ImageList = this.Backpack_Images;
+            this.Bacppack_2.Location = new System.Drawing.Point(387, 527);
+            this.Bacppack_2.Name = "Bacppack_2";
+            this.Bacppack_2.Size = new System.Drawing.Size(79, 140);
+            this.Bacppack_2.TabIndex = 25;
+            this.Bacppack_2.Text = "Backpack";
+            this.Bacppack_2.UseVisualStyleBackColor = false;
+            // 
+            // EnergyAmmo
+            // 
+            this.EnergyAmmo.BackColor = System.Drawing.Color.Black;
+            this.EnergyAmmo.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.EnergyAmmo.ImageIndex = 1;
+            this.EnergyAmmo.ImageList = this.EnergyAmmo_Images;
+            this.EnergyAmmo.Location = new System.Drawing.Point(507, 360);
+            this.EnergyAmmo.Name = "EnergyAmmo";
+            this.EnergyAmmo.Size = new System.Drawing.Size(79, 140);
+            this.EnergyAmmo.TabIndex = 26;
+            this.EnergyAmmo.Text = "EnergyAmmo";
+            this.EnergyAmmo.UseVisualStyleBackColor = false;
+            // 
+            // EnergyAmmo_2
+            // 
+            this.EnergyAmmo_2.BackColor = System.Drawing.Color.Black;
+            this.EnergyAmmo_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.EnergyAmmo_2.ImageIndex = 1;
+            this.EnergyAmmo_2.ImageList = this.EnergyAmmo_Images;
+            this.EnergyAmmo_2.Location = new System.Drawing.Point(507, 527);
+            this.EnergyAmmo_2.Name = "EnergyAmmo_2";
+            this.EnergyAmmo_2.Size = new System.Drawing.Size(79, 140);
+            this.EnergyAmmo_2.TabIndex = 27;
+            this.EnergyAmmo_2.Text = "EnergyAmmo";
+            this.EnergyAmmo_2.UseVisualStyleBackColor = false;
+            // 
+            // HeavyAmmo
+            // 
+            this.HeavyAmmo.BackColor = System.Drawing.Color.Black;
+            this.HeavyAmmo.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.HeavyAmmo.ImageIndex = 1;
+            this.HeavyAmmo.ImageList = this.HeavyAmmo_Images;
+            this.HeavyAmmo.Location = new System.Drawing.Point(627, 360);
+            this.HeavyAmmo.Name = "HeavyAmmo";
+            this.HeavyAmmo.Size = new System.Drawing.Size(79, 140);
+            this.HeavyAmmo.TabIndex = 28;
+            this.HeavyAmmo.Text = "HeavyAmmo";
+            this.HeavyAmmo.UseVisualStyleBackColor = false;
+            // 
+            // HeavyAmmo_2
+            // 
+            this.HeavyAmmo_2.BackColor = System.Drawing.Color.Black;
+            this.HeavyAmmo_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.HeavyAmmo_2.ImageIndex = 1;
+            this.HeavyAmmo_2.ImageList = this.HeavyAmmo_Images;
+            this.HeavyAmmo_2.Location = new System.Drawing.Point(627, 527);
+            this.HeavyAmmo_2.Name = "HeavyAmmo_2";
+            this.HeavyAmmo_2.Size = new System.Drawing.Size(79, 140);
+            this.HeavyAmmo_2.TabIndex = 29;
+            this.HeavyAmmo_2.Text = "HeavyAmmo";
+            this.HeavyAmmo_2.UseVisualStyleBackColor = false;
+            // 
+            // LightAmmo
+            // 
+            this.LightAmmo.BackColor = System.Drawing.Color.Black;
+            this.LightAmmo.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.LightAmmo.ImageIndex = 1;
+            this.LightAmmo.ImageList = this.LightAmmo_Images;
+            this.LightAmmo.Location = new System.Drawing.Point(747, 360);
+            this.LightAmmo.Name = "LightAmmo";
+            this.LightAmmo.Size = new System.Drawing.Size(79, 140);
+            this.LightAmmo.TabIndex = 30;
+            this.LightAmmo.Text = "LightAmmo";
+            this.LightAmmo.UseVisualStyleBackColor = false;
+            // 
+            // LightAmmo_2
+            // 
+            this.LightAmmo_2.BackColor = System.Drawing.Color.Black;
+            this.LightAmmo_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.LightAmmo_2.ImageIndex = 1;
+            this.LightAmmo_2.ImageList = this.LightAmmo_Images;
+            this.LightAmmo_2.Location = new System.Drawing.Point(747, 527);
+            this.LightAmmo_2.Name = "LightAmmo_2";
+            this.LightAmmo_2.Size = new System.Drawing.Size(79, 140);
+            this.LightAmmo_2.TabIndex = 31;
+            this.LightAmmo_2.Text = "LightAmmo";
+            this.LightAmmo_2.UseVisualStyleBackColor = false;
+            // 
+            // ShotgunAmmo
+            // 
+            this.ShotgunAmmo.BackColor = System.Drawing.Color.Black;
+            this.ShotgunAmmo.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.ShotgunAmmo.ImageIndex = 1;
+            this.ShotgunAmmo.ImageList = this.ShotgunAmmo_Images;
+            this.ShotgunAmmo.Location = new System.Drawing.Point(867, 360);
+            this.ShotgunAmmo.Name = "ShotgunAmmo";
+            this.ShotgunAmmo.Size = new System.Drawing.Size(79, 140);
+            this.ShotgunAmmo.TabIndex = 32;
+            this.ShotgunAmmo.Text = "ShotgunAmmo";
+            this.ShotgunAmmo.UseVisualStyleBackColor = false;
+            // 
+            // ShotgunAmmo_2
+            // 
+            this.ShotgunAmmo_2.BackColor = System.Drawing.Color.Black;
+            this.ShotgunAmmo_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.ShotgunAmmo_2.ImageIndex = 1;
+            this.ShotgunAmmo_2.ImageList = this.ShotgunAmmo_Images;
+            this.ShotgunAmmo_2.Location = new System.Drawing.Point(867, 527);
+            this.ShotgunAmmo_2.Name = "ShotgunAmmo_2";
+            this.ShotgunAmmo_2.Size = new System.Drawing.Size(79, 140);
+            this.ShotgunAmmo_2.TabIndex = 33;
+            this.ShotgunAmmo_2.Text = "ShotgunAmmo";
+            this.ShotgunAmmo_2.UseVisualStyleBackColor = false;
+            // 
+            // SniperAmmo
+            // 
+            this.SniperAmmo.BackColor = System.Drawing.Color.Black;
+            this.SniperAmmo.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.SniperAmmo.ImageIndex = 1;
+            this.SniperAmmo.ImageList = this.SniperAmmo_Images;
+            this.SniperAmmo.Location = new System.Drawing.Point(987, 360);
+            this.SniperAmmo.Name = "SniperAmmo";
+            this.SniperAmmo.Size = new System.Drawing.Size(79, 140);
+            this.SniperAmmo.TabIndex = 34;
+            this.SniperAmmo.Text = "SniperAmmo";
+            this.SniperAmmo.UseVisualStyleBackColor = false;
+            // 
+            // SniperAmmo_2
+            // 
+            this.SniperAmmo_2.BackColor = System.Drawing.Color.Black;
+            this.SniperAmmo_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.SniperAmmo_2.ImageIndex = 1;
+            this.SniperAmmo_2.ImageList = this.SniperAmmo_Images;
+            this.SniperAmmo_2.Location = new System.Drawing.Point(987, 527);
+            this.SniperAmmo_2.Name = "SniperAmmo_2";
+            this.SniperAmmo_2.Size = new System.Drawing.Size(79, 140);
+            this.SniperAmmo_2.TabIndex = 35;
+            this.SniperAmmo_2.Text = "button1";
+            this.SniperAmmo_2.UseVisualStyleBackColor = false;
+            // 
             // Form_NormalMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
-            this.ClientSize = new System.Drawing.Size(1584, 862);
+            this.ClientSize = new System.Drawing.Size(1097, 707);
+            this.Controls.Add(this.SniperAmmo_2);
+            this.Controls.Add(this.SniperAmmo);
+            this.Controls.Add(this.ShotgunAmmo_2);
+            this.Controls.Add(this.ShotgunAmmo);
+            this.Controls.Add(this.LightAmmo_2);
+            this.Controls.Add(this.LightAmmo);
+            this.Controls.Add(this.HeavyAmmo_2);
+            this.Controls.Add(this.HeavyAmmo);
+            this.Controls.Add(this.EnergyAmmo_2);
+            this.Controls.Add(this.EnergyAmmo);
+            this.Controls.Add(this.Bacppack_2);
+            this.Controls.Add(this.Backpack);
+            this.Controls.Add(this.Wraith_2);
+            this.Controls.Add(this.Wraith);
+            this.Controls.Add(this.Wattson_2);
+            this.Controls.Add(this.Wattson);
+            this.Controls.Add(this.Revenant_2);
+            this.Controls.Add(this.Revenant);
+            this.Controls.Add(this.Pathfinder_2);
+            this.Controls.Add(this.Pathfinder);
+            this.Controls.Add(this.Octane_2);
+            this.Controls.Add(this.Octane);
+            this.Controls.Add(this.Mirage_2);
+            this.Controls.Add(this.Mirage);
+            this.Controls.Add(this.Lifeline_2);
+            this.Controls.Add(this.Lifeline);
+            this.Controls.Add(this.Gibraltar_2);
+            this.Controls.Add(this.Gibraltar);
+            this.Controls.Add(this.Crypto_2);
+            this.Controls.Add(this.Crypto);
+            this.Controls.Add(this.Caustic_2);
+            this.Controls.Add(this.Caustic);
+            this.Controls.Add(this.Bloodhound_2);
+            this.Controls.Add(this.Bloodhound);
             this.Controls.Add(this.Banglore_2);
             this.Controls.Add(this.Banglore);
             this.Name = "Form_NormalMode";
@@ -186,5 +744,45 @@
         private System.Windows.Forms.ImageList Octane_Images;
         private System.Windows.Forms.ImageList Revenant_Images;
         private System.Windows.Forms.ImageList Wattson_Images;
+        private System.Windows.Forms.Button Bloodhound;
+        private System.Windows.Forms.Button Bloodhound_2;
+        private System.Windows.Forms.Button Caustic;
+        private System.Windows.Forms.Button Caustic_2;
+        private System.Windows.Forms.Button Crypto;
+        private System.Windows.Forms.Button Crypto_2;
+        private System.Windows.Forms.Button Gibraltar;
+        private System.Windows.Forms.Button Gibraltar_2;
+        private System.Windows.Forms.Button Lifeline;
+        private System.Windows.Forms.Button Lifeline_2;
+        private System.Windows.Forms.Button Mirage;
+        private System.Windows.Forms.Button Mirage_2;
+        private System.Windows.Forms.Button Octane;
+        private System.Windows.Forms.Button Octane_2;
+        private System.Windows.Forms.Button Pathfinder;
+        private System.Windows.Forms.Button Pathfinder_2;
+        private System.Windows.Forms.Button Revenant;
+        private System.Windows.Forms.Button Revenant_2;
+        private System.Windows.Forms.Button Wattson;
+        private System.Windows.Forms.Button Wattson_2;
+        private System.Windows.Forms.Button Wraith;
+        private System.Windows.Forms.Button Wraith_2;
+        private System.Windows.Forms.ImageList HeavyAmmo_Images;
+        private System.Windows.Forms.ImageList LightAmmo_Images;
+        private System.Windows.Forms.ImageList EnergyAmmo_Images;
+        private System.Windows.Forms.ImageList ShotgunAmmo_Images;
+        private System.Windows.Forms.ImageList Backpack_Images;
+        private System.Windows.Forms.ImageList SniperAmmo_Images;
+        private System.Windows.Forms.Button Backpack;
+        private System.Windows.Forms.Button Bacppack_2;
+        private System.Windows.Forms.Button EnergyAmmo;
+        private System.Windows.Forms.Button EnergyAmmo_2;
+        private System.Windows.Forms.Button HeavyAmmo;
+        private System.Windows.Forms.Button HeavyAmmo_2;
+        private System.Windows.Forms.Button LightAmmo;
+        private System.Windows.Forms.Button LightAmmo_2;
+        private System.Windows.Forms.Button ShotgunAmmo;
+        private System.Windows.Forms.Button ShotgunAmmo_2;
+        private System.Windows.Forms.Button SniperAmmo;
+        private System.Windows.Forms.Button SniperAmmo_2;
     }
 }

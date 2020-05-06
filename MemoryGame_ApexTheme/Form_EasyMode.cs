@@ -10,7 +10,7 @@ namespace MemoryGame_ApexTheme
     public partial class Form_EasyMode : Form
     {
         Match CheckForMatches = new Match();
-        CardPositions[] positions;
+        GetFormInfo formInfo;
 
         public Form_EasyMode()
         {
@@ -19,69 +19,10 @@ namespace MemoryGame_ApexTheme
 
         private async void Form_EasyMode_Load(object sender, EventArgs e)                   
         {
-            positions = GetButtonsLocations();
-            Shuffle();
+            formInfo = new GetFormInfo(this);
+            formInfo.Shuffle();
         }
-
-        public void Shuffle()
-        {
-            uint buttonNo = CalculateButtons();
-
-            RandomizePositions randomize = new RandomizePositions(buttonNo, positions);
-            CardPositions[] cardPositions = new CardPositions[buttonNo];
-            cardPositions = randomize.ReturnNewPositions();
-
-            uint i = 0;
-            foreach (Button button in Controls.OfType<Button>())
-            {
-                /*int posX = randomize.ReturnNewPositions()[i].X;
-                int posY = randomize.ReturnNewPositions()[i].Y;*/
-
-                int posX = cardPositions[i].X;
-                int posY = cardPositions[i].Y;
-
-                button.Location = new Point(posX, posY);
-                button.Refresh();
-
-                ++i;
-            }
-        }
-
-        public CardPositions[] GetButtonsLocations()
-        {
-            uint buttons = CalculateButtons();
-
-            CardPositions[] cardsPositions = new CardPositions[buttons];
-            Debug.WriteLine(buttons);
-
-            ushort i = 0;
-
-            foreach (Button button in Controls.OfType<Button>())
-            {
-
-                cardsPositions[i] = new CardPositions();
-                cardsPositions[i].X = button.Location.X;
-                cardsPositions[i].Y = button.Location.Y;
-
-                Debug.WriteLine("X: " + cardsPositions[i].X + " Y: " + cardsPositions[i].Y);
-                ++i;
-                
-            }
-
-            return cardsPositions;
-        }
-
-        public uint CalculateButtons()
-        {
-            uint result = 0;
-
-            foreach(var button in Controls.OfType<Button>())
-            {
-                ++result;
-            }
-
-            return result;
-        }
+        
 
         #region Buttons
         private void Banglore_1_Click(object sender, EventArgs e)

@@ -89,6 +89,7 @@
     <Compile Include="Form_NormalMode.Designer.cs">
       <DependentUpon>Form_NormalMode.cs</DependentUpon>
     </Compile>
+    <Compile Include="GetFormInfo.cs" />
     <Compile Include="Match.cs" />
     <Compile Include="NewPositions.cs" />
     <Compile Include="Program.cs" />

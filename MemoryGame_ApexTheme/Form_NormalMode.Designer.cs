@@ -98,6 +98,7 @@
             this.Banglore.TabIndex = 0;
             this.Banglore.Text = "Banglore";
             this.Banglore.UseVisualStyleBackColor = false;
+            this.Banglore.Click += new System.EventHandler(this.Banglore_Click);
             // 
             // Banglore_Images
             // 
@@ -724,6 +725,7 @@
             this.Controls.Add(this.Banglore);
             this.Name = "Form_NormalMode";
             this.Text = "Form_NormalMode";
+            this.Load += new System.EventHandler(this.Form_NormalMode_Load);
             this.ResumeLayout(false);
 
         }

@@ -101,6 +101,9 @@
     <EmbeddedResource Include="Form_EasyMode.resx">
       <DependentUpon>Form_EasyMode.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_NormalMode.resx">
+      <DependentUpon>Form_NormalMode.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

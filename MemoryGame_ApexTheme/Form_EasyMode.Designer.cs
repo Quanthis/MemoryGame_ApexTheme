@@ -348,6 +348,7 @@
             this.Controls.Add(this.Bloodhound);
             this.Controls.Add(this.Banglore_2);
             this.Controls.Add(this.Banglore_1);
+            this.MinimumSize = new System.Drawing.Size(1361, 658);
             this.Name = "Form_EasyMode";
             this.Text = "Form_EasyMode";
             this.Load += new System.EventHandler(this.Form_EasyMode_Load);

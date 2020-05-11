@@ -776,7 +776,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
-            this.ClientSize = new System.Drawing.Size(1237, 707);
+            this.ClientSize = new System.Drawing.Size(1234, 702);
             this.Controls.Add(this.TrialsCounter);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TimeElapsed);
@@ -817,6 +817,7 @@
             this.Controls.Add(this.Bloodhound);
             this.Controls.Add(this.Banglore_2);
             this.Controls.Add(this.Banglore);
+            this.MinimumSize = new System.Drawing.Size(1250, 740);
             this.Name = "Form_NormalMode";
             this.Text = "Form_NormalMode";
             this.Load += new System.EventHandler(this.Form_NormalMode_Load);

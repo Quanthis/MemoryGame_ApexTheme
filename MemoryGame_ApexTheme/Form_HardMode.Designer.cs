@@ -98,6 +98,7 @@
             this.Vulnat = new System.Windows.Forms.Button();
             this.Vulnat_Images = new System.Windows.Forms.ImageList(this.components);
             this.Vulnat_2 = new System.Windows.Forms.Button();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // Timer
@@ -885,12 +886,27 @@
             this.Vulnat_2.UseVisualStyleBackColor = false;
             this.Vulnat_2.Click += new System.EventHandler(this.Vulnat_2_Click);
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.BackColor = System.Drawing.Color.White;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.radioButton1.Location = new System.Drawing.Point(546, 727);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(92, 21);
+            this.radioButton1.TabIndex = 84;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "God Mode";
+            this.radioButton1.UseVisualStyleBackColor = false;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
             // Form_HardMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(1584, 862);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.Vulnat_2);
             this.Controls.Add(this.Vulnat);
             this.Controls.Add(this.TrialsCounter);
@@ -1015,5 +1031,6 @@
         private System.Windows.Forms.Button Vulnat;
         private System.Windows.Forms.ImageList Vulnat_Images;
         private System.Windows.Forms.Button Vulnat_2;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }

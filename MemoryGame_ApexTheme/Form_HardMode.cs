@@ -35,8 +35,7 @@ namespace MemoryGame_ApexTheme
         }
 
 
-
-
+        #region Buttons
         private void Banglore_Click(object sender, EventArgs e)
         {
             CheckForMatches.AddButton(Banglore);
@@ -287,6 +286,13 @@ namespace MemoryGame_ApexTheme
         {
             CheckForMatches.AddButton(Vulnat_2);
             CheckForMatches.Matched();
+        }
+
+        #endregion
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            GetFormInfo.GodMode(this);
         }
     }
 }

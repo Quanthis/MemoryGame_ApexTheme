@@ -51,7 +51,6 @@ namespace MemoryGame_ApexTheme
                 {
                     newIndexes[iter] = i;
                     ++iter;
-                    Debug.WriteLine("Iteration: " + iter + " random: " + i);
                 }
 
                 /*for (uint i = 0; i < buttonsNumber; ++i)
@@ -142,7 +141,7 @@ namespace MemoryGame_ApexTheme
             Random rnd = new Random();
             while (list.Count > 0)
             {
-                int index = rnd.Next(list.Count);
+                int index = rnd.Next(list.Count - 1);
                 yield return list[index];
                 list.RemoveAt(index);
             }

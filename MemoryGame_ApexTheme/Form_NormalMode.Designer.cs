@@ -717,7 +717,7 @@
             this.SniperAmmo_2.Name = "SniperAmmo_2";
             this.SniperAmmo_2.Size = new System.Drawing.Size(79, 140);
             this.SniperAmmo_2.TabIndex = 35;
-            this.SniperAmmo_2.Text = "button1";
+            this.SniperAmmo_2.Text = "SniperAmmo";
             this.SniperAmmo_2.UseVisualStyleBackColor = false;
             this.SniperAmmo_2.Click += new System.EventHandler(this.SniperAmmo_2_Click);
             // 

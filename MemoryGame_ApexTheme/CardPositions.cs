@@ -37,11 +37,5 @@ namespace MemoryGame_ApexTheme
         {
             return index;
         }
-
-        public void SetNewPositions(int posX, int posY)
-        {
-            X = posX;
-            Y = posY;
-        }
     }
 }

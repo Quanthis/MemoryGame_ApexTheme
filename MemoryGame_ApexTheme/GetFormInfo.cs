@@ -42,10 +42,8 @@ namespace MemoryGame_ApexTheme
 
             foreach (Button button in checkedForm.Controls.OfType<Button>())
             {
-
-                cardsPositions[i] = new CardPositions();
-                cardsPositions[i].X = button.Location.X;
-                cardsPositions[i].Y = button.Location.Y;
+                cardsPositions[i] = new CardPositions(button.Location.X, button.Location.Y);
+                System.Diagnostics.Debug.WriteLine("Loaded card: " + cardsPositions[i].GetIndex() + " name: " + button.Name);
 
                 ++i;
             }
@@ -88,6 +86,15 @@ namespace MemoryGame_ApexTheme
                 int minutesElapsed = (int)(secondsElapsed / 60);
                 int rest = (int)(secondsElapsed - minutesElapsed * 60);
                 whereToSave.Text = minutesElapsed + " min " + rest + " s";
+            }
+        }
+
+        public static void GodMode(Form callingForm)
+        {
+            foreach(var button in callingForm.Controls.OfType<Button>())
+            {
+                button.ImageIndex = 0;
+                button.Refresh();
             }
         }
     }

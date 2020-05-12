@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace MemoryGame_ApexTheme
 {
-    public class RandomizePositions : NewPositions
+    public class RandomizePositions : NewPositions, IDisposable
     {
         private uint buttonsNumber;
         private CardPositions[] cardPositions;
         private CardPositions[] finalPosition;
+        private bool disposed = false;
 
         public RandomizePositions(uint howManyNewPositions, ref CardPositions[] currentPositions)
         {
@@ -41,7 +42,6 @@ namespace MemoryGame_ApexTheme
                     indexes[i] = cardPositions[i].GetIndex();                           //getting array of card positions indexes
                 }
 
-                // Okay, now I think I will just create new objects CardPositions and return it, instead of modyfing existing array
 
                 int[] newIndexes = new int[buttonsNumber];
                 List<int> list = indexes.ToList();
@@ -53,73 +53,11 @@ namespace MemoryGame_ApexTheme
                     ++iter;
                 }
 
-                /*for (uint i = 0; i < buttonsNumber; ++i)
-                {
-                    //newIndexes[i] = r.Next(indexes.Min(), indexes.Max());
-                    int newIndex = r.Next(list.Min(), list.Max());
-                    Debug.WriteLine("New index: " + newIndex);
-                    newIndexes[i] = newIndex;
-                    list.RemoveAt(newIndex);
-                    list.TrimExcess();
-                }*/
-
-
-                /*int iteration = 0;
-                while((newIndexes[iteration] == 0 || newIndexes[iteration] == null) && iteration < indexes.Length )
-                {
-                    newIndexes[iteration] = r.Next(indexes.Min(), indexes.Max());
-                    ++iteration;
-                }*/
-
                 CardPositions[] shuffled = new CardPositions[buttonsNumber];
                 for (uint i = 0; i < buttonsNumber; ++i)
                 {
                     shuffled[i] = new CardPositions(cardPositions[i].X, cardPositions[i].Y, newIndexes[i]);
                 }
-
-                #region NotWorkingLoop
-                /*foreach (var position in cardPositions)
-                {
-                    int i = 0;
-                    int outerIteration = 0;
-
-                    Debug.WriteLine(position.GetIndex());
-
-                    while (cardPositions[outerIteration].GetIndex() != shuffled[outerIteration].GetIndex())
-                    {
-                        Debug.WriteLine("Checked item: " + cardPositions[i].GetIndex() + " 2nd checked: " + shuffled[i].GetIndex());
-
-
-                        if (cardPositions[i].GetIndex() == shuffled[i].GetIndex())
-                        {
-                            Debug.WriteLine("Changing  position: " + cardPositions[i].GetIndex() + " to: " + shuffled[i].GetIndex());
-
-                            finalPosition[i] = shuffled[i];
-
-                            Debug.WriteLine("Changed  position: " + finalPosition[i].GetIndex() + " to: " + shuffled[i].GetIndex());
-                            break;
-                        }
-
-
-                        if(i == cardPositions.Length - 1)
-                        {
-                            Debug.WriteLine("Not found.");
-
-                            finalPosition[i] = cardPositions[i];
-
-                            break;
-                        }
-
-                        ++i;
-                    }
-
-                    ++outerIteration;
-                }
-
-                Debug.WriteLine(finalPosition[0] + " sample ");
-                */
-
-                #endregion
 
                 int succesIteration = 0;
                 foreach (var position in cardPositions)
@@ -146,5 +84,37 @@ namespace MemoryGame_ApexTheme
                 list.RemoveAt(index);
             }
         }
+
+        #region Cleaning
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    for(int i = 0; i < buttonsNumber; ++i)
+                    {
+                        cardPositions[i].Dispose();
+                        finalPosition[i].Dispose();
+                    }
+                }
+
+                disposed = true;
+            }
+        }
+
+        ~RandomizePositions()
+        {
+            Dispose(false);
+        }
+
+        #endregion
     }
 }

@@ -30,73 +30,73 @@ namespace MemoryGame_ApexTheme
         #region Buttons
         private void Banglore_1_Click(object sender, EventArgs e)
         {
-            CheckForMatches.AddButton(Banglore_1);
+            CheckForMatches.AddButton(ref Banglore_1);
             CheckForMatches.Matched();
         }
 
         private void Banglore_2_Click(object sender, EventArgs e)
         {
-            CheckForMatches.AddButton(Banglore_2);
+            CheckForMatches.AddButton(ref Banglore_2);
             CheckForMatches.Matched();
         }
 
         private void Bloodhound_Click(object sender, EventArgs e)
         {
-            CheckForMatches.AddButton(Bloodhound);
+            CheckForMatches.AddButton(ref Bloodhound);
             CheckForMatches.Matched();
         }
 
         private void Bloodhound_2_Click(object sender, EventArgs e)
         {
-            CheckForMatches.AddButton(Bloodhound_2);
+            CheckForMatches.AddButton(ref Bloodhound_2);
             CheckForMatches.Matched();
         }
 
         private void Caustic_Click(object sender, EventArgs e)
         {
-            CheckForMatches.AddButton(Caustic);
+            CheckForMatches.AddButton(ref Caustic);
             CheckForMatches.Matched();
         }
 
         private void Caustic_2_Click(object sender, EventArgs e)
         {
-            CheckForMatches.AddButton(Caustic_2);
+            CheckForMatches.AddButton(ref Caustic_2);
             CheckForMatches.Matched();
         }
 
         private void Lifeline_Click(object sender, EventArgs e)
         {
-            CheckForMatches.AddButton(Lifeline);
+            CheckForMatches.AddButton(ref Lifeline);
             CheckForMatches.Matched();
         }
 
         private void Lifeline2_Click(object sender, EventArgs e)
         {
-            CheckForMatches.AddButton(Lifeline2);
+            CheckForMatches.AddButton(ref Lifeline2);
             CheckForMatches.Matched();
         }
 
         private void Pathfinder_Click(object sender, EventArgs e)
         {
-            CheckForMatches.AddButton(Pathfinder);
+            CheckForMatches.AddButton(ref Pathfinder);
             CheckForMatches.Matched();
         }
 
         private void Pathfinder_2_Click(object sender, EventArgs e)
         {
-            CheckForMatches.AddButton(Pathfinder_2);
+            CheckForMatches.AddButton(ref Pathfinder_2);
             CheckForMatches.Matched();
         }
 
         private void Wraith_Click(object sender, EventArgs e)
         {
-            CheckForMatches.AddButton(Wraith);
+            CheckForMatches.AddButton(ref Wraith);
             CheckForMatches.Matched();
         }
 
         private void Wraith_2_Click(object sender, EventArgs e)
         {
-            CheckForMatches.AddButton(Wraith_2);
+            CheckForMatches.AddButton(ref Wraith_2);
             CheckForMatches.Matched();
         }
 
@@ -104,7 +104,7 @@ namespace MemoryGame_ApexTheme
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            GetFormInfo.Timer(ref secondsElapsed, TimeElapsed, this);
+            formInfo.Timer(ref secondsElapsed, ref TimeElapsed);
             TrialsCounter.Text = CheckForMatches.GetTrialsCount().ToString();
         }
     }

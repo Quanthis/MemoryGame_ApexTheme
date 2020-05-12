@@ -3,11 +3,12 @@ using System.Threading;
 
 namespace MemoryGame_ApexTheme
 {
-    public class CardPositions
+    public class CardPositions : IDisposable
     {
         public int X;
         public int Y;
         private int index;
+        private bool disposed = false;
 
         private static int globalIndex = 0;
 
@@ -37,5 +38,33 @@ namespace MemoryGame_ApexTheme
         {
             return index;
         }
+
+        #region Cleaning
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    
+                }
+
+                disposed = true;
+            }
+        }
+
+        ~CardPositions()
+        {
+            Dispose(false);
+        }
+
+        #endregion
     }
 }

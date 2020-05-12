@@ -6,11 +6,12 @@ using System.Diagnostics;
 
 namespace MemoryGame_ApexTheme
 {
-    public class Match : ReturnMatch, ButtonsToDispose
+    public class Match : ReturnMatch, ButtonsToDispose, IDisposable
     {
         private Button firstButtonPressed;
         private Button secondButtonPressed;
         private int trialsCount;
+        private bool disposed = false;
 
         public Match()
         {
@@ -34,7 +35,7 @@ namespace MemoryGame_ApexTheme
         }
 
 
-        public void AddButton(Button newButton)
+        public void AddButton(ref Button newButton)
         {
             if (firstButtonPressed == null)
             {
@@ -94,5 +95,34 @@ namespace MemoryGame_ApexTheme
         {
             return trialsCount;
         }
+
+        #region Cleaning
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    firstButtonPressed.Dispose();
+                    secondButtonPressed.Dispose();
+                }
+
+                disposed = true;
+            }
+        }
+
+        ~Match()
+        {
+            Dispose(false);
+        }
+
+        #endregion
     }
 }

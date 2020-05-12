@@ -43,8 +43,6 @@ namespace MemoryGame_ApexTheme
             foreach (Button button in checkedForm.Controls.OfType<Button>())
             {
                 cardsPositions[i] = new CardPositions(button.Location.X, button.Location.Y);
-                System.Diagnostics.Debug.WriteLine("Loaded card: " + cardsPositions[i].GetIndex() + " name: " + button.Name);
-
                 ++i;
             }
 
@@ -66,14 +64,13 @@ namespace MemoryGame_ApexTheme
                 int posY = cardPositions[i].Y;
 
                 button.Location = new Point(posX, posY);
-                System.Diagnostics.Debug.WriteLine("Returned card: " + button.Name);
                 button.Refresh();
 
                 ++i;
             }
         }
 
-        public static void Timer(ref long secondsElapsed, Label whereToSave, Form callingForm)
+        public void Timer(ref long secondsElapsed, ref Label whereToSave)
         {
             ++secondsElapsed;
             whereToSave.Text = secondsElapsed.ToString() + "s";
@@ -90,7 +87,8 @@ namespace MemoryGame_ApexTheme
             }
         }
 
-        public static void GodMode(Form callingForm)
+        #region adminTools
+        public void GodMode(ref Form callingForm)
         {
             foreach(var button in callingForm.Controls.OfType<Button>())
             {
@@ -98,5 +96,6 @@ namespace MemoryGame_ApexTheme
                 button.Refresh();
             }
         }
+        #endregion
     }
 }

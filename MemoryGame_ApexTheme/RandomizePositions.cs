@@ -12,7 +12,7 @@ namespace MemoryGame_ApexTheme
         private CardPositions[] cardPositions;
         private CardPositions[] finalPosition;
 
-        public RandomizePositions(uint howManyNewPositions, CardPositions[] currentPositions)
+        public RandomizePositions(uint howManyNewPositions, ref CardPositions[] currentPositions)
         {
             buttonsNumber = howManyNewPositions;
             cardPositions = currentPositions;

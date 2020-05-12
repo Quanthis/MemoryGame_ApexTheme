@@ -98,7 +98,9 @@
             this.Vulnat = new System.Windows.Forms.Button();
             this.Vulnat_Images = new System.Windows.Forms.ImageList(this.components);
             this.Vulnat_2 = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.Vezoro = new System.Windows.Forms.Button();
+            this.Vezoro_Images = new System.Windows.Forms.ImageList(this.components);
+            this.Vezoro_2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Timer
@@ -118,7 +120,7 @@
             // 
             this.LightAmmo_Images.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("LightAmmo_Images.ImageStream")));
             this.LightAmmo_Images.TransparentColor = System.Drawing.Color.Transparent;
-            this.LightAmmo_Images.Images.SetKeyName(0, "Lifeline.png");
+            this.LightAmmo_Images.Images.SetKeyName(0, "LightAmmo.PNG");
             this.LightAmmo_Images.Images.SetKeyName(1, "Covered_Card.PNG");
             // 
             // EnergyAmmo_Images
@@ -886,27 +888,49 @@
             this.Vulnat_2.UseVisualStyleBackColor = false;
             this.Vulnat_2.Click += new System.EventHandler(this.Vulnat_2_Click);
             // 
-            // radioButton1
+            // Vezoro
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.White;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.radioButton1.Location = new System.Drawing.Point(546, 727);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(92, 21);
-            this.radioButton1.TabIndex = 84;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "God Mode";
-            this.radioButton1.UseVisualStyleBackColor = false;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.Vezoro.BackColor = System.Drawing.Color.Black;
+            this.Vezoro.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Vezoro.ImageIndex = 1;
+            this.Vezoro.ImageList = this.Vezoro_Images;
+            this.Vezoro.Location = new System.Drawing.Point(1117, 537);
+            this.Vezoro.Name = "Vezoro";
+            this.Vezoro.Size = new System.Drawing.Size(79, 140);
+            this.Vezoro.TabIndex = 85;
+            this.Vezoro.Text = "Vezoro";
+            this.Vezoro.UseVisualStyleBackColor = false;
+            this.Vezoro.Click += new System.EventHandler(this.Vezoro_Click);
+            // 
+            // Vezoro_Images
+            // 
+            this.Vezoro_Images.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("Vezoro_Images.ImageStream")));
+            this.Vezoro_Images.TransparentColor = System.Drawing.Color.Transparent;
+            this.Vezoro_Images.Images.SetKeyName(0, "Vezoro.png");
+            this.Vezoro_Images.Images.SetKeyName(1, "Covered_Card.PNG");
+            // 
+            // Vezoro_2
+            // 
+            this.Vezoro_2.BackColor = System.Drawing.Color.Black;
+            this.Vezoro_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
+            this.Vezoro_2.ImageIndex = 1;
+            this.Vezoro_2.ImageList = this.Vezoro_Images;
+            this.Vezoro_2.Location = new System.Drawing.Point(1237, 537);
+            this.Vezoro_2.Name = "Vezoro_2";
+            this.Vezoro_2.Size = new System.Drawing.Size(79, 140);
+            this.Vezoro_2.TabIndex = 86;
+            this.Vezoro_2.Text = "Vezoro";
+            this.Vezoro_2.UseVisualStyleBackColor = false;
+            this.Vezoro_2.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form_HardMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
-            this.ClientSize = new System.Drawing.Size(1584, 862);
-            this.Controls.Add(this.radioButton1);
+            this.ClientSize = new System.Drawing.Size(1584, 712);
+            this.Controls.Add(this.Vezoro_2);
+            this.Controls.Add(this.Vezoro);
             this.Controls.Add(this.Vulnat_2);
             this.Controls.Add(this.Vulnat);
             this.Controls.Add(this.TrialsCounter);
@@ -953,7 +977,7 @@
             this.Controls.Add(this.Caustic);
             this.Controls.Add(this.Bloodhound);
             this.Controls.Add(this.Banglore);
-            this.MinimumSize = new System.Drawing.Size(1600, 900);
+            this.MinimumSize = new System.Drawing.Size(1600, 750);
             this.Name = "Form_HardMode";
             this.Text = "Form_HardMode";
             this.Load += new System.EventHandler(this.Form_HardMode_Load);
@@ -1032,6 +1056,8 @@
         private System.Windows.Forms.Button Vulnat;
         private System.Windows.Forms.ImageList Vulnat_Images;
         private System.Windows.Forms.Button Vulnat_2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Button Vezoro;
+        private System.Windows.Forms.ImageList Vezoro_Images;
+        private System.Windows.Forms.Button Vezoro_2;
     }
 }

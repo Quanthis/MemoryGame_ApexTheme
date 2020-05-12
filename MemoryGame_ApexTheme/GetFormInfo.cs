@@ -55,7 +55,7 @@ namespace MemoryGame_ApexTheme
         {
             uint buttonNo = CalculateButtons();
 
-            RandomizePositions randomize = new RandomizePositions(buttonNo, positions);
+            RandomizePositions randomize = new RandomizePositions(buttonNo, ref positions);
             CardPositions[] cardPositions = new CardPositions[buttonNo];
             cardPositions = await randomize.ReturnNewPositions();
 
@@ -66,6 +66,7 @@ namespace MemoryGame_ApexTheme
                 int posY = cardPositions[i].Y;
 
                 button.Location = new Point(posX, posY);
+                System.Diagnostics.Debug.WriteLine("Returned card: " + button.Name);
                 button.Refresh();
 
                 ++i;

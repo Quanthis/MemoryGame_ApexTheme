@@ -288,11 +288,24 @@ namespace MemoryGame_ApexTheme
             CheckForMatches.Matched();
         }
 
+        private void Vezoro_Click(object sender, EventArgs e)
+        {
+            CheckForMatches.AddButton(Vezoro);
+            CheckForMatches.Matched();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CheckForMatches.AddButton(Vezoro_2);
+            CheckForMatches.Matched();
+        }
+
         #endregion
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            GetFormInfo.GodMode(this);
         }
+
+
     }
 }

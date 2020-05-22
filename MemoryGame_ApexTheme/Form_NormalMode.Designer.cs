@@ -522,7 +522,7 @@
             // 
             this.LightAmmo_Images.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("LightAmmo_Images.ImageStream")));
             this.LightAmmo_Images.TransparentColor = System.Drawing.Color.Transparent;
-            this.LightAmmo_Images.Images.SetKeyName(0, "Lifeline.png");
+            this.LightAmmo_Images.Images.SetKeyName(0, "LightAmmo.PNG");
             this.LightAmmo_Images.Images.SetKeyName(1, "Covered_Card.PNG");
             // 
             // EnergyAmmo_Images
@@ -817,6 +817,7 @@
             this.Controls.Add(this.Bloodhound);
             this.Controls.Add(this.Banglore_2);
             this.Controls.Add(this.Banglore);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1250, 740);
             this.Name = "Form_NormalMode";
             this.Text = "Form_NormalMode";

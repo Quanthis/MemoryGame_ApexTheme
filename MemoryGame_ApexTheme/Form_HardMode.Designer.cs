@@ -977,6 +977,7 @@
             this.Controls.Add(this.Caustic);
             this.Controls.Add(this.Bloodhound);
             this.Controls.Add(this.Banglore);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1600, 750);
             this.Name = "Form_HardMode";
             this.Text = "Form_HardMode";

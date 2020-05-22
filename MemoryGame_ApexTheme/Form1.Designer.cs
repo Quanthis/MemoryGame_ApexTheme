@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.TurnEasyMode = new System.Windows.Forms.Button();
             this.TurnNormalMode = new System.Windows.Forms.Button();
             this.TurnHardMode = new System.Windows.Forms.Button();
@@ -110,6 +111,8 @@
             this.Controls.Add(this.TurnHardMode);
             this.Controls.Add(this.TurnNormalMode);
             this.Controls.Add(this.TurnEasyMode);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(355, 318);
             this.MinimumSize = new System.Drawing.Size(355, 318);
             this.Name = "Form1";

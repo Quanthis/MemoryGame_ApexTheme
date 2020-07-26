@@ -116,6 +116,7 @@
     <Compile Include="Form_NormalMode.Designer.cs">
       <DependentUpon>Form_NormalMode.cs</DependentUpon>
     </Compile>
+    <Compile Include="GameEnder.cs" />
     <Compile Include="GetFormInfo.cs" />
     <Compile Include="Match.cs" />
     <Compile Include="NewPositions.cs" />

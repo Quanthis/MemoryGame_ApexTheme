@@ -709,6 +709,9 @@
             // 
             // SniperAmmo_2
             // 
+            this.SniperAmmo_2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.SniperAmmo_2.BackColor = System.Drawing.Color.Black;
             this.SniperAmmo_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
             this.SniperAmmo_2.ImageIndex = 1;

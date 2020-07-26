@@ -64,14 +64,18 @@
             // 
             // Wraith_2
             // 
-            this.Wraith_2.AutoSize = true;
+            this.Wraith_2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Wraith_2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Wraith_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Wraith_2.BackgroundImage")));
             this.Wraith_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
             this.Wraith_2.ImageIndex = 1;
             this.Wraith_2.ImageList = this.Wraith_Images;
             this.Wraith_2.Location = new System.Drawing.Point(961, 318);
+            this.Wraith_2.MaximumSize = new System.Drawing.Size(324, 524);
             this.Wraith_2.Name = "Wraith_2";
-            this.Wraith_2.Size = new System.Drawing.Size(162, 281);
+            this.Wraith_2.Size = new System.Drawing.Size(162, 262);
             this.Wraith_2.TabIndex = 11;
             this.Wraith_2.Text = "Wraith";
             this.Wraith_2.UseVisualStyleBackColor = true;
@@ -86,14 +90,18 @@
             // 
             // Wraith
             // 
-            this.Wraith.AutoSize = true;
+            this.Wraith.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Wraith.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Wraith.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Wraith.BackgroundImage")));
             this.Wraith.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
             this.Wraith.ImageIndex = 1;
             this.Wraith.ImageList = this.Wraith_Images;
             this.Wraith.Location = new System.Drawing.Point(961, 12);
+            this.Wraith.MaximumSize = new System.Drawing.Size(324, 524);
             this.Wraith.Name = "Wraith";
-            this.Wraith.Size = new System.Drawing.Size(162, 281);
+            this.Wraith.Size = new System.Drawing.Size(162, 262);
             this.Wraith.TabIndex = 10;
             this.Wraith.Text = "Wraith";
             this.Wraith.UseVisualStyleBackColor = true;
@@ -101,14 +109,18 @@
             // 
             // Pathfinder_2
             // 
-            this.Pathfinder_2.AutoSize = true;
+            this.Pathfinder_2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Pathfinder_2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Pathfinder_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Pathfinder_2.BackgroundImage")));
             this.Pathfinder_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
             this.Pathfinder_2.ImageIndex = 1;
             this.Pathfinder_2.ImageList = this.Pathfinder_Images;
             this.Pathfinder_2.Location = new System.Drawing.Point(776, 318);
+            this.Pathfinder_2.MaximumSize = new System.Drawing.Size(324, 524);
             this.Pathfinder_2.Name = "Pathfinder_2";
-            this.Pathfinder_2.Size = new System.Drawing.Size(162, 281);
+            this.Pathfinder_2.Size = new System.Drawing.Size(162, 262);
             this.Pathfinder_2.TabIndex = 9;
             this.Pathfinder_2.Text = "Pathfinder";
             this.Pathfinder_2.UseVisualStyleBackColor = true;
@@ -123,14 +135,18 @@
             // 
             // Pathfinder
             // 
-            this.Pathfinder.AutoSize = true;
+            this.Pathfinder.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Pathfinder.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Pathfinder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Pathfinder.BackgroundImage")));
             this.Pathfinder.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
             this.Pathfinder.ImageIndex = 1;
             this.Pathfinder.ImageList = this.Pathfinder_Images;
             this.Pathfinder.Location = new System.Drawing.Point(776, 12);
+            this.Pathfinder.MaximumSize = new System.Drawing.Size(324, 524);
             this.Pathfinder.Name = "Pathfinder";
-            this.Pathfinder.Size = new System.Drawing.Size(162, 281);
+            this.Pathfinder.Size = new System.Drawing.Size(162, 262);
             this.Pathfinder.TabIndex = 8;
             this.Pathfinder.Text = "Pathfinder";
             this.Pathfinder.UseVisualStyleBackColor = true;
@@ -138,14 +154,18 @@
             // 
             // Lifeline2
             // 
-            this.Lifeline2.AutoSize = true;
+            this.Lifeline2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Lifeline2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Lifeline2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Lifeline2.BackgroundImage")));
             this.Lifeline2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
             this.Lifeline2.ImageIndex = 1;
             this.Lifeline2.ImageList = this.Lifeline_Images;
             this.Lifeline2.Location = new System.Drawing.Point(580, 318);
+            this.Lifeline2.MaximumSize = new System.Drawing.Size(324, 524);
             this.Lifeline2.Name = "Lifeline2";
-            this.Lifeline2.Size = new System.Drawing.Size(162, 281);
+            this.Lifeline2.Size = new System.Drawing.Size(162, 262);
             this.Lifeline2.TabIndex = 7;
             this.Lifeline2.Text = "Lifeline";
             this.Lifeline2.UseVisualStyleBackColor = true;
@@ -160,14 +180,18 @@
             // 
             // Lifeline
             // 
-            this.Lifeline.AutoSize = true;
+            this.Lifeline.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Lifeline.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Lifeline.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Lifeline.BackgroundImage")));
             this.Lifeline.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
             this.Lifeline.ImageIndex = 1;
             this.Lifeline.ImageList = this.Lifeline_Images;
             this.Lifeline.Location = new System.Drawing.Point(580, 12);
+            this.Lifeline.MaximumSize = new System.Drawing.Size(324, 524);
             this.Lifeline.Name = "Lifeline";
-            this.Lifeline.Size = new System.Drawing.Size(162, 281);
+            this.Lifeline.Size = new System.Drawing.Size(162, 262);
             this.Lifeline.TabIndex = 6;
             this.Lifeline.Text = "Lifeline";
             this.Lifeline.UseVisualStyleBackColor = true;
@@ -175,14 +199,18 @@
             // 
             // Caustic_2
             // 
-            this.Caustic_2.AutoSize = true;
+            this.Caustic_2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Caustic_2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Caustic_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Caustic_2.BackgroundImage")));
             this.Caustic_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
             this.Caustic_2.ImageIndex = 1;
             this.Caustic_2.ImageList = this.Caustic_Images;
             this.Caustic_2.Location = new System.Drawing.Point(391, 318);
+            this.Caustic_2.MaximumSize = new System.Drawing.Size(324, 524);
             this.Caustic_2.Name = "Caustic_2";
-            this.Caustic_2.Size = new System.Drawing.Size(162, 281);
+            this.Caustic_2.Size = new System.Drawing.Size(162, 262);
             this.Caustic_2.TabIndex = 5;
             this.Caustic_2.Text = "Caustic";
             this.Caustic_2.UseVisualStyleBackColor = true;
@@ -197,14 +225,18 @@
             // 
             // Caustic
             // 
-            this.Caustic.AutoSize = true;
+            this.Caustic.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Caustic.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Caustic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Caustic.BackgroundImage")));
             this.Caustic.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
             this.Caustic.ImageIndex = 1;
             this.Caustic.ImageList = this.Caustic_Images;
             this.Caustic.Location = new System.Drawing.Point(391, 12);
+            this.Caustic.MaximumSize = new System.Drawing.Size(324, 524);
             this.Caustic.Name = "Caustic";
-            this.Caustic.Size = new System.Drawing.Size(162, 281);
+            this.Caustic.Size = new System.Drawing.Size(162, 262);
             this.Caustic.TabIndex = 4;
             this.Caustic.Text = "Caustic";
             this.Caustic.UseVisualStyleBackColor = true;
@@ -212,14 +244,18 @@
             // 
             // Bloodhound_2
             // 
-            this.Bloodhound_2.AutoSize = true;
+            this.Bloodhound_2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Bloodhound_2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Bloodhound_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bloodhound_2.BackgroundImage")));
             this.Bloodhound_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
             this.Bloodhound_2.ImageIndex = 1;
             this.Bloodhound_2.ImageList = this.Bloodhound_Images;
             this.Bloodhound_2.Location = new System.Drawing.Point(196, 318);
+            this.Bloodhound_2.MaximumSize = new System.Drawing.Size(324, 524);
             this.Bloodhound_2.Name = "Bloodhound_2";
-            this.Bloodhound_2.Size = new System.Drawing.Size(162, 281);
+            this.Bloodhound_2.Size = new System.Drawing.Size(162, 262);
             this.Bloodhound_2.TabIndex = 3;
             this.Bloodhound_2.Text = "Bloodhound";
             this.Bloodhound_2.UseVisualStyleBackColor = true;
@@ -234,14 +270,18 @@
             // 
             // Bloodhound
             // 
-            this.Bloodhound.AutoSize = true;
+            this.Bloodhound.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Bloodhound.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Bloodhound.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bloodhound.BackgroundImage")));
             this.Bloodhound.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
             this.Bloodhound.ImageIndex = 1;
             this.Bloodhound.ImageList = this.Bloodhound_Images;
             this.Bloodhound.Location = new System.Drawing.Point(196, 12);
+            this.Bloodhound.MaximumSize = new System.Drawing.Size(324, 524);
             this.Bloodhound.Name = "Bloodhound";
-            this.Bloodhound.Size = new System.Drawing.Size(162, 281);
+            this.Bloodhound.Size = new System.Drawing.Size(162, 262);
             this.Bloodhound.TabIndex = 2;
             this.Bloodhound.Text = "Bloodhound";
             this.Bloodhound.UseVisualStyleBackColor = true;
@@ -249,14 +289,18 @@
             // 
             // Banglore_2
             // 
-            this.Banglore_2.AutoSize = true;
+            this.Banglore_2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Banglore_2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Banglore_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Banglore_2.BackgroundImage")));
             this.Banglore_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
             this.Banglore_2.ImageIndex = 1;
             this.Banglore_2.ImageList = this.Banglore_Images;
             this.Banglore_2.Location = new System.Drawing.Point(12, 318);
+            this.Banglore_2.MaximumSize = new System.Drawing.Size(324, 524);
             this.Banglore_2.Name = "Banglore_2";
-            this.Banglore_2.Size = new System.Drawing.Size(162, 281);
+            this.Banglore_2.Size = new System.Drawing.Size(162, 262);
             this.Banglore_2.TabIndex = 1;
             this.Banglore_2.Text = "Banglore";
             this.Banglore_2.UseVisualStyleBackColor = true;
@@ -264,13 +308,18 @@
             // 
             // Banglore_1
             // 
+            this.Banglore_1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Banglore_1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Banglore_1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Banglore_1.BackgroundImage")));
             this.Banglore_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 0.1F);
             this.Banglore_1.ImageIndex = 1;
             this.Banglore_1.ImageList = this.Banglore_Images;
             this.Banglore_1.Location = new System.Drawing.Point(12, 12);
+            this.Banglore_1.MaximumSize = new System.Drawing.Size(324, 524);
             this.Banglore_1.Name = "Banglore_1";
-            this.Banglore_1.Size = new System.Drawing.Size(158, 281);
+            this.Banglore_1.Size = new System.Drawing.Size(162, 262);
             this.Banglore_1.TabIndex = 0;
             this.Banglore_1.Text = "Banglore";
             this.Banglore_1.UseVisualStyleBackColor = true;
@@ -284,6 +333,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -295,6 +345,7 @@
             // 
             // TimeElapsed
             // 
+            this.TimeElapsed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.TimeElapsed.BackColor = System.Drawing.Color.White;
             this.TimeElapsed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.TimeElapsed.Location = new System.Drawing.Point(1181, 168);
@@ -306,6 +357,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label2.Location = new System.Drawing.Point(1181, 371);
@@ -317,6 +369,7 @@
             // 
             // TrialsCounter
             // 
+            this.TrialsCounter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.TrialsCounter.BackColor = System.Drawing.Color.White;
             this.TrialsCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.TrialsCounter.Location = new System.Drawing.Point(1181, 471);

@@ -11,6 +11,7 @@ namespace MemoryGame_ApexTheme
     {
         Match CheckForMatches = new Match();
         GetFormInfo formInfo;
+        GameEnder gameEnder;
         long secondsElapsed;
 
 
@@ -19,11 +20,20 @@ namespace MemoryGame_ApexTheme
             InitializeComponent();
         }
 
+        public uint GetTrialsCount()
+        {
+            return Convert.ToUInt32(TrialsCounter);
+        }
+
         private async void Form_EasyMode_Load(object sender, EventArgs e)                   
         {
             formInfo = new GetFormInfo(this);
             formInfo.Shuffle();
             long secondsElapsed = Convert.ToInt64(TimeElapsed.Text);
+
+            gameEnder = new GameEnder(this);
+
+            gameEnder.EndGame(this.GetTrialsCount(), TimeElapsed.Text);
         }
 
 
